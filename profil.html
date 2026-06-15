@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/app-version-guard.js?v=194"></script>
+    <script type="importmap">
+{"imports":{"/js/version.js":"/js/version.js?v=194","./js/version.js":"/js/version.js?v=194","/js/acces-demo.js":"/js/acces-demo.js?v=194","./js/acces-demo.js":"/js/acces-demo.js?v=194","/js/address-format.js":"/js/address-format.js?v=194","./js/address-format.js":"/js/address-format.js?v=194","/js/ai-assistant.js":"/js/ai-assistant.js?v=194","./js/ai-assistant.js":"/js/ai-assistant.js?v=194","/js/app-config.js":"/js/app-config.js?v=194","./js/app-config.js":"/js/app-config.js?v=194","/js/app-security.js":"/js/app-security.js?v=194","./js/app-security.js":"/js/app-security.js?v=194","/js/app-version-guard.js":"/js/app-version-guard.js?v=194","./js/app-version-guard.js":"/js/app-version-guard.js?v=194","/js/app-viewport.js":"/js/app-viewport.js?v=194","./js/app-viewport.js":"/js/app-viewport.js?v=194","/js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","./js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","/js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","./js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","/js/auth.js":"/js/auth.js?v=194","./js/auth.js":"/js/auth.js?v=194","/js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","./js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","/js/avis-form.js":"/js/avis-form.js?v=194","./js/avis-form.js":"/js/avis-form.js?v=194","/js/avis-gestion.js":"/js/avis-gestion.js?v=194","./js/avis-gestion.js":"/js/avis-gestion.js?v=194","/js/back-nav.js":"/js/back-nav.js?v=194","./js/back-nav.js":"/js/back-nav.js?v=194","/js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","./js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","/js/bibliotheque.js":"/js/bibliotheque.js?v=194","./js/bibliotheque.js":"/js/bibliotheque.js?v=194","/js/brand.js":"/js/brand.js?v=194","./js/brand.js":"/js/brand.js?v=194","/js/calculator.js":"/js/calculator.js?v=194","./js/calculator.js":"/js/calculator.js?v=194","/js/campagnes.js":"/js/campagnes.js?v=194","./js/campagnes.js":"/js/campagnes.js?v=194","/js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","./js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","/js/chantier-detail.js":"/js/chantier-detail.js?v=194","./js/chantier-detail.js":"/js/chantier-detail.js?v=194","/js/chantier-hub.js":"/js/chantier-hub.js?v=194","./js/chantier-hub.js":"/js/chantier-hub.js?v=194","/js/chantiers.js":"/js/chantiers.js?v=194","./js/chantiers.js":"/js/chantiers.js?v=194","/js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","./js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","/js/clients.js":"/js/clients.js?v=194","./js/clients.js":"/js/clients.js?v=194","/js/commercial-store.js":"/js/commercial-store.js?v=194","./js/commercial-store.js":"/js/commercial-store.js?v=194","/js/commercial-sync.js":"/js/commercial-sync.js?v=194","./js/commercial-sync.js":"/js/commercial-sync.js?v=194","/js/compta-engine.js":"/js/compta-engine.js?v=194","./js/compta-engine.js":"/js/compta-engine.js?v=194","/js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","./js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","/js/compta-imputation.js":"/js/compta-imputation.js?v=194","./js/compta-imputation.js":"/js/compta-imputation.js?v=194","/js/compta-store.js":"/js/compta-store.js?v=194","./js/compta-store.js":"/js/compta-store.js?v=194","/js/comptabilite.js":"/js/comptabilite.js?v=194","./js/comptabilite.js":"/js/comptabilite.js?v=194","/js/country-config.js":"/js/country-config.js?v=194","./js/country-config.js":"/js/country-config.js?v=194","/js/currency-format.js":"/js/currency-format.js?v=194","./js/currency-format.js":"/js/currency-format.js?v=194","/js/dashboard.js":"/js/dashboard.js?v=194","./js/dashboard.js":"/js/dashboard.js?v=194","/js/data.js":"/js/data.js?v=194","./js/data.js":"/js/data.js?v=194","/js/demo-seed.js":"/js/demo-seed.js?v=194","./js/demo-seed.js":"/js/demo-seed.js?v=194","/js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","./js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","/js/devis-draft.js":"/js/devis-draft.js?v=194","./js/devis-draft.js":"/js/devis-draft.js?v=194","/js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","./js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","/js/devis-line-types.js":"/js/devis-line-types.js?v=194","./js/devis-line-types.js":"/js/devis-line-types.js?v=194","/js/devis-lines.js":"/js/devis-lines.js?v=194","./js/devis-lines.js":"/js/devis-lines.js?v=194","/js/devis-payments.js":"/js/devis-payments.js?v=194","./js/devis-payments.js":"/js/devis-payments.js?v=194","/js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","./js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","/js/devis.js":"/js/devis.js?v=194","./js/devis.js":"/js/devis.js?v=194","/js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","./js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","/js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","./js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","/js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","./js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","/js/email-verification.js":"/js/email-verification.js?v=194","./js/email-verification.js":"/js/email-verification.js?v=194","/js/employe-historique.js":"/js/employe-historique.js?v=194","./js/employe-historique.js":"/js/employe-historique.js?v=194","/js/employe-index.js":"/js/employe-index.js?v=194","./js/employe-index.js":"/js/employe-index.js?v=194","/js/employe-metre.js":"/js/employe-metre.js?v=194","./js/employe-metre.js":"/js/employe-metre.js?v=194","/js/employe-nav.js":"/js/employe-nav.js?v=194","./js/employe-nav.js":"/js/employe-nav.js?v=194","/js/employe-security.js":"/js/employe-security.js?v=194","./js/employe-security.js":"/js/employe-security.js?v=194","/js/employee-access.js":"/js/employee-access.js?v=194","./js/employee-access.js":"/js/employee-access.js?v=194","/js/employee-auth.js":"/js/employee-auth.js?v=194","./js/employee-auth.js":"/js/employee-auth.js?v=194","/js/employes.js":"/js/employes.js?v=194","./js/employes.js":"/js/employes.js?v=194","/js/i18n.js":"/js/i18n.js?v=194","./js/i18n.js":"/js/i18n.js?v=194","/js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","./js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","/js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","./js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","/js/landing-features.js":"/js/landing-features.js?v=194","./js/landing-features.js":"/js/landing-features.js?v=194","/js/landing-money.js":"/js/landing-money.js?v=194","./js/landing-money.js":"/js/landing-money.js?v=194","/js/landing-nav.js":"/js/landing-nav.js?v=194","./js/landing-nav.js":"/js/landing-nav.js?v=194","/js/legal-content.js":"/js/legal-content.js?v=194","./js/legal-content.js":"/js/legal-content.js?v=194","/js/legal-footer.js":"/js/legal-footer.js?v=194","./js/legal-footer.js":"/js/legal-footer.js?v=194","/js/legal-page.js":"/js/legal-page.js?v=194","./js/legal-page.js":"/js/legal-page.js?v=194","/js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","./js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","/js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","./js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","/js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","./js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","/js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","./js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","/js/locales/messages.js":"/js/locales/messages.js?v=194","./js/locales/messages.js":"/js/locales/messages.js?v=194","/js/market.js":"/js/market.js?v=194","./js/market.js":"/js/market.js?v=194","/js/metre-calculator.js":"/js/metre-calculator.js?v=194","./js/metre-calculator.js":"/js/metre-calculator.js?v=194","/js/metre-constants.js":"/js/metre-constants.js?v=194","./js/metre-constants.js":"/js/metre-constants.js?v=194","/js/metre-templates.js":"/js/metre-templates.js?v=194","./js/metre-templates.js":"/js/metre-templates.js?v=194","/js/metre-validation.js":"/js/metre-validation.js?v=194","./js/metre-validation.js":"/js/metre-validation.js?v=194","/js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","./js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","/js/mobile-env.js":"/js/mobile-env.js?v=194","./js/mobile-env.js":"/js/mobile-env.js?v=194","/js/module-base.js":"/js/module-base.js?v=194","./js/module-base.js":"/js/module-base.js?v=194","/js/module-import.js":"/js/module-import.js?v=194","./js/module-import.js":"/js/module-import.js?v=194","/js/nav-app.js":"/js/nav-app.js?v=194","./js/nav-app.js":"/js/nav-app.js?v=194","/js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","./js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","/js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","./js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","/js/payment-link-service.js":"/js/payment-link-service.js?v=194","./js/payment-link-service.js":"/js/payment-link-service.js?v=194","/js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","./js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","/js/payment-page.js":"/js/payment-page.js?v=194","./js/payment-page.js":"/js/payment-page.js?v=194","/js/payment-plan.js":"/js/payment-plan.js?v=194","./js/payment-plan.js":"/js/payment-plan.js?v=194","/js/payment-store.js":"/js/payment-store.js?v=194","./js/payment-store.js":"/js/payment-store.js?v=194","/js/pdf-devis.js":"/js/pdf-devis.js?v=194","./js/pdf-devis.js":"/js/pdf-devis.js?v=194","/js/planning-calendar.js":"/js/planning-calendar.js?v=194","./js/planning-calendar.js":"/js/planning-calendar.js?v=194","/js/planning-store.js":"/js/planning-store.js?v=194","./js/planning-store.js":"/js/planning-store.js?v=194","/js/planning.js":"/js/planning.js?v=194","./js/planning.js":"/js/planning.js?v=194","/js/prestation-images.js":"/js/prestation-images.js?v=194","./js/prestation-images.js":"/js/prestation-images.js?v=194","/js/prestation-search.js":"/js/prestation-search.js?v=194","./js/prestation-search.js":"/js/prestation-search.js?v=194","/js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","./js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","/js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","./js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","/js/prestations-import.js":"/js/prestations-import.js?v=194","./js/prestations-import.js":"/js/prestations-import.js?v=194","/js/profil.js":"/js/profil.js?v=194","./js/profil.js":"/js/profil.js?v=194","/js/profile-completeness.js":"/js/profile-completeness.js?v=194","./js/profile-completeness.js":"/js/profile-completeness.js?v=194","/js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","./js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","/js/pwa-install.js":"/js/pwa-install.js?v=194","./js/pwa-install.js":"/js/pwa-install.js?v=194","/js/quick-test.js":"/js/quick-test.js?v=194","./js/quick-test.js":"/js/quick-test.js?v=194","/js/quote-pricing.js":"/js/quote-pricing.js?v=194","./js/quote-pricing.js":"/js/quote-pricing.js?v=194","/js/quote-sections.js":"/js/quote-sections.js?v=194","./js/quote-sections.js":"/js/quote-sections.js?v=194","/js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","./js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","/js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","./js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","/js/register-sw.js":"/js/register-sw.js?v=194","./js/register-sw.js":"/js/register-sw.js?v=194","/js/renta-demo.js":"/js/renta-demo.js?v=194","./js/renta-demo.js":"/js/renta-demo.js?v=194","/js/signature-pad.js":"/js/signature-pad.js?v=194","./js/signature-pad.js":"/js/signature-pad.js?v=194","/js/simulation-metre.js":"/js/simulation-metre.js?v=194","./js/simulation-metre.js":"/js/simulation-metre.js?v=194","/js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","./js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","/js/site-publisher.js":"/js/site-publisher.js?v=194","./js/site-publisher.js":"/js/site-publisher.js?v=194","/js/site-services.js":"/js/site-services.js?v=194","./js/site-services.js":"/js/site-services.js?v=194","/js/statistiques.js":"/js/statistiques.js?v=194","./js/statistiques.js":"/js/statistiques.js?v=194","/js/storage-guard.js":"/js/storage-guard.js?v=194","./js/storage-guard.js":"/js/storage-guard.js?v=194","/js/storage-repair.js":"/js/storage-repair.js?v=194","./js/storage-repair.js":"/js/storage-repair.js?v=194","/js/storage.js":"/js/storage.js?v=194","./js/storage.js":"/js/storage.js?v=194","/js/subscription.js":"/js/subscription.js?v=194","./js/subscription.js":"/js/subscription.js?v=194","/js/support-store.js":"/js/support-store.js?v=194","./js/support-store.js":"/js/support-store.js?v=194","/js/support.js":"/js/support.js?v=194","./js/support.js":"/js/support.js?v=194","/js/tarifs.js":"/js/tarifs.js?v=194","./js/tarifs.js":"/js/tarifs.js?v=194","/js/testimonials-render.js":"/js/testimonials-render.js?v=194","./js/testimonials-render.js":"/js/testimonials-render.js?v=194","/js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","./js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","/js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","./js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","/js/travel-fees.js":"/js/travel-fees.js?v=194","./js/travel-fees.js":"/js/travel-fees.js?v=194","/js/trial.js":"/js/trial.js?v=194","./js/trial.js":"/js/trial.js?v=194","/js/utils.js":"/js/utils.js?v=194","./js/utils.js":"/js/utils.js?v=194"},"scopes":{"/js/locales/":{"./app-ui.js":"./app-ui.js?v=194","./catalog-meta.js":"./catalog-meta.js?v=194","./landing-content.js":"./landing-content.js?v=194","./messages.js":"./messages.js?v=194"},"/js/":{"./acces-demo.js":"./acces-demo.js?v=194","./address-format.js":"./address-format.js?v=194","./ai-assistant.js":"./ai-assistant.js?v=194","./app-config.js":"./app-config.js?v=194","./app-security.js":"./app-security.js?v=194","./app-version-guard.js":"./app-version-guard.js?v=194","./app-viewport.js":"./app-viewport.js?v=194","./assistant-knowledge.js":"./assistant-knowledge.js?v=194","./auth-otp-ui.js":"./auth-otp-ui.js?v=194","./auth.js":"./auth.js?v=194","./auto-image-fetch.js":"./auto-image-fetch.js?v=194","./avis-form.js":"./avis-form.js?v=194","./avis-gestion.js":"./avis-gestion.js?v=194","./back-nav.js":"./back-nav.js?v=194","./batiprix-catalog.js":"./batiprix-catalog.js?v=194","./bibliotheque.js":"./bibliotheque.js?v=194","./brand.js":"./brand.js?v=194","./calculator.js":"./calculator.js?v=194","./campagnes.js":"./campagnes.js?v=194","./catalog-i18n.js":"./catalog-i18n.js?v=194","./chantier-detail.js":"./chantier-detail.js?v=194","./chantier-hub.js":"./chantier-hub.js?v=194","./chantiers.js":"./chantiers.js?v=194","./client-quote-visibility.js":"./client-quote-visibility.js?v=194","./clients.js":"./clients.js?v=194","./commercial-store.js":"./commercial-store.js?v=194","./commercial-sync.js":"./commercial-sync.js?v=194","./compta-engine.js":"./compta-engine.js?v=194","./compta-fec-export.js":"./compta-fec-export.js?v=194","./compta-imputation.js":"./compta-imputation.js?v=194","./compta-store.js":"./compta-store.js?v=194","./comptabilite.js":"./comptabilite.js?v=194","./country-config.js":"./country-config.js?v=194","./currency-format.js":"./currency-format.js?v=194","./dashboard.js":"./dashboard.js?v=194","./data.js":"./data.js?v=194","./demo-seed.js":"./demo-seed.js?v=194","./devis-draft-store.js":"./devis-draft-store.js?v=194","./devis-draft.js":"./devis-draft.js?v=194","./devis-fee-templates.js":"./devis-fee-templates.js?v=194","./devis-line-types.js":"./devis-line-types.js?v=194","./devis-lines.js":"./devis-lines.js?v=194","./devis-payments.js":"./devis-payments.js?v=194","./devis-table-fit.js":"./devis-table-fit.js?v=194","./devis.js":"./devis.js?v=194","./diagnostic-report.js":"./diagnostic-report.js?v=194","./difficulty-coefficients-store.js":"./difficulty-coefficients-store.js?v=194","./difficulty-settings.js":"./difficulty-settings.js?v=194","./email-verification.js":"./email-verification.js?v=194","./employe-historique.js":"./employe-historique.js?v=194","./employe-index.js":"./employe-index.js?v=194","./employe-metre.js":"./employe-metre.js?v=194","./employe-nav.js":"./employe-nav.js?v=194","./employe-security.js":"./employe-security.js?v=194","./employee-access.js":"./employee-access.js?v=194","./employee-auth.js":"./employee-auth.js?v=194","./employes.js":"./employes.js?v=194","./i18n.js":"./i18n.js?v=194","./installation-difficulty.js":"./installation-difficulty.js?v=194","./landing-faq-i18n.js":"./landing-faq-i18n.js?v=194","./landing-features.js":"./landing-features.js?v=194","./landing-money.js":"./landing-money.js?v=194","./landing-nav.js":"./landing-nav.js?v=194","./legal-content.js":"./legal-content.js?v=194","./legal-footer.js":"./legal-footer.js?v=194","./legal-page.js":"./legal-page.js?v=194","./leroy-merlin.js":"./leroy-merlin.js?v=194","./market.js":"./market.js?v=194","./metre-calculator.js":"./metre-calculator.js?v=194","./metre-constants.js":"./metre-constants.js?v=194","./metre-templates.js":"./metre-templates.js?v=194","./metre-validation.js":"./metre-validation.js?v=194","./mobile-bottom-nav.js":"./mobile-bottom-nav.js?v=194","./mobile-env.js":"./mobile-env.js?v=194","./module-base.js":"./module-base.js?v=194","./module-import.js":"./module-import.js?v=194","./nav-app.js":"./nav-app.js?v=194","./nav-menu-bootstrap.js":"./nav-menu-bootstrap.js?v=194","./nav-prefs-html.js":"./nav-prefs-html.js?v=194","./payment-link-service.js":"./payment-link-service.js?v=194","./payment-link.codec.js":"./payment-link.codec.js?v=194","./payment-page.js":"./payment-page.js?v=194","./payment-plan.js":"./payment-plan.js?v=194","./payment-store.js":"./payment-store.js?v=194","./pdf-devis.js":"./pdf-devis.js?v=194","./planning-calendar.js":"./planning-calendar.js?v=194","./planning-store.js":"./planning-store.js?v=194","./planning.js":"./planning.js?v=194","./prestation-images.js":"./prestation-images.js?v=194","./prestation-search.js":"./prestation-search.js?v=194","./prestation-svg-thumbs.js":"./prestation-svg-thumbs.js?v=194","./prestations-catalog.js":"./prestations-catalog.js?v=194","./prestations-import.js":"./prestations-import.js?v=194","./profil.js":"./profil.js?v=194","./profile-completeness.js":"./profile-completeness.js?v=194","./pwa-bootstrap.js":"./pwa-bootstrap.js?v=194","./pwa-install.js":"./pwa-install.js?v=194","./quick-test.js":"./quick-test.js?v=194","./quote-pricing.js":"./quote-pricing.js?v=194","./quote-sections.js":"./quote-sections.js?v=194","./rdv-reminder-init.js":"./rdv-reminder-init.js?v=194","./rdv-reminder-service.js":"./rdv-reminder-service.js?v=194","./register-sw.js":"./register-sw.js?v=194","./renta-demo.js":"./renta-demo.js?v=194","./signature-pad.js":"./signature-pad.js?v=194","./simulation-metre.js":"./simulation-metre.js?v=194","./site-publisher.defaults.js":"./site-publisher.defaults.js?v=194","./site-publisher.js":"./site-publisher.js?v=194","./site-services.js":"./site-services.js?v=194","./statistiques.js":"./statistiques.js?v=194","./storage-guard.js":"./storage-guard.js?v=194","./storage-repair.js":"./storage-repair.js?v=194","./storage.js":"./storage.js?v=194","./subscription.js":"./subscription.js?v=194","./support-store.js":"./support-store.js?v=194","./support.js":"./support.js?v=194","./tarifs.js":"./tarifs.js?v=194","./testimonials-render.js":"./testimonials-render.js?v=194","./testimonials-seed.js":"./testimonials-seed.js?v=194","./trade-catalog-extensions.js":"./trade-catalog-extensions.js?v=194","./travel-fees.js":"./travel-fees.js?v=194","./trial.js":"./trial.js?v=194","./utils.js":"./utils.js?v=194","./version.js":"./version.js?v=194"}}}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <script src="js/mobile-env.js?v=194"></script>
+
+        <script src="js/app-viewport.js?v=194"></script>
+<meta name="theme-color" content="#6665dd" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Mon profil — Exxon-bat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/base.css?v=194" />
+    <link rel="stylesheet" href="css/app.css?v=194" />
+    <link rel="stylesheet" href="css/mobile-app.css?v=194" />
+    <link rel="stylesheet" href="css/mobile-nav.css?v=194" />
+    <link rel="stylesheet" href="css/profil.css?v=194" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="index.html" class="brand">
+          <div class="brand__logo" data-brand-logo aria-hidden="true"></div>
+          <div class="brand__text">
+            <span class="brand__name">Exxon-bat</span>
+            <span class="brand__tag">Profil entreprise</span>
+          </div>
+        </a>
+        <div class="nav__links">
+          <a href="dashboard.html" data-nav="dashboard" class="nav__link">Accueil</a>
+          <a href="devis.html" data-nav="devis" class="nav__link" data-i18n="nav.quotesInvoices">Devis & factures</a>
+          <a href="devis.html#rentabilite" data-nav="rentabilite" class="nav__link" data-i18n="nav.rentability">Rentabilité</a>
+          <a href="comptabilite.html" data-nav="comptabilite" class="nav__link">Comptabilité</a>
+          <a href="profil.html" data-nav="profil" class="nav__link nav__link--active">Profil</a>
+          <a href="tarifs.html" data-nav="tarifs" class="nav__link">Tarifs</a>
+          <span id="nav-user" class="nav__user"></span>
+          <a href="#" id="nav-logout" class="nav__link">Déconnexion</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="app-page">
+      <div class="container">
+        <div class="upgrade-banner" id="profile-redirect-banner" hidden>
+          <p style="margin:0">Complétez votre profil pour accéder à l'analyse de devis et à l'export PDF.</p>
+          <a href="devis.html" class="btn btn--ghost btn--sm" id="profile-skip-link" hidden>Plus tard</a>
+        </div>
+
+        <div class="profil-hero">
+          <div class="profil-hero__text">
+            <h1 id="profil-page-title">Mon profil entreprise</h1>
+            <p>Paramètres juridiques, tarification, identité et conditions devis — synchronisés sur vos PDF, paiements et exports comptables.</p>
+          </div>
+          <div class="profil-hero__score" id="profil-score-card">
+            <div class="profil-score-ring" id="profil-score-ring" data-score="0">
+              <span id="profil-score-value">0 %</span>
+            </div>
+            <div class="profil-score-meta">
+              <strong id="profil-score-label">Profil à compléter</strong>
+              <span id="profil-score-detail">0 / 7 sections</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="profile-form">
+          <div class="profil-tabs" id="profil-tabs" role="tablist">
+            <button type="button" class="profil-tabs__btn is-active" data-tab="overview">Vue d'ensemble</button>
+            <button type="button" class="profil-tabs__btn" data-tab="rentabilite">Rentabilité</button>
+            <button type="button" class="profil-tabs__btn" data-tab="entreprise">Entreprise & légal</button>
+            <button type="button" class="profil-tabs__btn" data-tab="devis">Devis & paiements</button>
+            <button type="button" class="profil-tabs__btn" data-tab="metier">Métré & déplacements</button>
+          </div>
+
+          <div id="profil-panels">
+            <!-- Vue d'ensemble -->
+            <section class="profil-panel" data-panel="overview">
+              <div class="profil-overview-grid">
+                <article class="card">
+                  <h2 class="card__title">Complétude du profil</h2>
+                  <p class="card__desc">Un profil complet améliore vos devis PDF, liens de paiement et export FEC.</p>
+                  <ul class="profil-checklist" id="profil-checklist"></ul>
+                </article>
+                <article class="card">
+                  <h2 class="card__title">Indicateurs tarifaires</h2>
+                  <div class="profil-kpi-grid" id="profil-kpi-grid"></div>
+                </article>
+                <article class="card profil-plan-card">
+                  <h2 class="card__title">Abonnement</h2>
+                  <p class="profil-plan-name" id="current-plan">—</p>
+                  <p class="card__desc">Modules débloqués selon votre offre.</p>
+                  <a href="tarifs.html" class="btn btn--ghost btn--sm">Gérer mon offre</a>
+                </article>
+                <article class="card profil-preview-card">
+                  <h2 class="card__title">Aperçu en-tête devis</h2>
+                  <div class="profil-doc-preview" id="profil-doc-preview"></div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Rentabilité -->
+            <section class="profil-panel" data-panel="rentabilite" hidden>
+              <div class="card">
+                <h2 class="card__title">Structure juridique</h2>
+                <p class="card__desc">Détermine le calcul de charges et le tarif horaire minimum recommandé.</p>
+                <div class="size-cards" id="size-cards">
+                  <button type="button" class="size-card size-card--active" data-business-type="micro">
+                    <div class="size-card__emoji">🚀</div>
+                    <strong>Micro-entreprise</strong>
+                    <span>Auto-entrepreneur, sans salarié</span>
+                  </button>
+                  <button type="button" class="size-card" data-business-type="solo">
+                    <div class="size-card__emoji">👤</div>
+                    <strong>Entrepreneur seul</strong>
+                    <span>EI, EURL, SASU — sans équipe</span>
+                  </button>
+                  <button type="button" class="size-card" data-business-type="tpe">
+                    <div class="size-card__emoji">👥</div>
+                    <strong>TPE / PME</strong>
+                    <span>Avec salariés</span>
+                  </button>
+                </div>
+
+                <div class="form__grid profil-form-grid">
+                  <label class="field">
+                    <span>Rémunération nette souhaitée / mois</span>
+                    <div class="field__wrap">
+                      <input type="number" id="monthly-net" min="0" step="50" value="2500" />
+                      <span class="field__suffix">€</span>
+                    </div>
+                    <small>Ce que vous voulez garder en poche</small>
+                  </label>
+                  <label class="field">
+                    <span>Frais fixes / mois</span>
+                    <div class="field__wrap">
+                      <input type="number" id="monthly-fixed" min="0" step="50" value="400" />
+                      <span class="field__suffix">€</span>
+                    </div>
+                    <small>Loyer, assurance, logiciels, comptable…</small>
+                  </label>
+                  <label class="field">
+                    <span>Heures productives / mois</span>
+                    <div class="field__wrap">
+                      <input type="number" id="monthly-hours" min="1" step="1" value="100" />
+                      <span class="field__suffix">h</span>
+                    </div>
+                    <small>Temps réellement facturable sur chantier</small>
+                  </label>
+                </div>
+
+                <div data-profile-panel="micro" class="profile-extra">
+                  <h3 class="profile-extra__title">Régime micro-entreprise</h3>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field">
+                      <span>Type d'activité</span>
+                      <div class="field__wrap">
+                        <select id="activity-type">
+                          <option value="bic">Prestations de services (BIC)</option>
+                          <option value="bnc">Prestations de services (BNC)</option>
+                          <option value="vente">Vente de marchandises</option>
+                          <option value="cipav">Profession libérale réglementée</option>
+                        </select>
+                      </div>
+                      <small id="activity-hint">Artisan, coiffeur, réparateur…</small>
+                    </label>
+                    <label class="field">
+                      <span>Régime TVA</span>
+                      <div class="field__wrap">
+                        <select id="tva-regime">
+                          <option value="franchise">Franchise en base (art. 293 B)</option>
+                          <option value="reel">TVA au réel</option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                  <label class="field field--check">
+                    <input type="checkbox" id="versement-liberatoire" />
+                    <span>Versement libératoire de l'impôt sur le revenu</span>
+                  </label>
+                </div>
+
+                <div data-profile-panel="solo" class="profile-extra" hidden>
+                  <h3 class="profile-extra__title">Entrepreneur individuel</h3>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field">
+                      <span>Charges sociales & fiscales estimées</span>
+                      <div class="field__wrap">
+                        <input type="number" id="charge-rate" min="20" max="60" step="1" value="45" />
+                        <span class="field__suffix">%</span>
+                      </div>
+                      <small>URSSAF dirigeant, impôts — estimation globale</small>
+                    </label>
+                    <label class="field">
+                      <span>Régime TVA</span>
+                      <div class="field__wrap">
+                        <select id="tva-regime-solo">
+                          <option value="franchise">Franchise en base</option>
+                          <option value="reel">TVA au réel</option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div data-profile-panel="tpe" class="profile-extra" hidden>
+                  <h3 class="profile-extra__title">TPE / PME</h3>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field">
+                      <span>Masse salariale / mois (charges comprises)</span>
+                      <div class="field__wrap">
+                        <input type="number" id="payroll-loaded" min="0" step="100" value="8500" />
+                        <span class="field__suffix">€</span>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Nombre de salariés</span>
+                      <div class="field__wrap">
+                        <input type="number" id="employee-count" min="1" step="1" value="2" />
+                        <span class="field__suffix">pers.</span>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Frais généraux sur coûts directs</span>
+                      <div class="field__wrap">
+                        <input type="number" id="overhead-rate" min="0" max="40" step="1" value="15" />
+                        <span class="field__suffix">%</span>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Régime TVA</span>
+                      <div class="field__wrap">
+                        <select id="tva-regime-tpe">
+                          <option value="reel">TVA au réel</option>
+                          <option value="franchise">Franchise en base</option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="kpi-preview profil-kpi-preview">
+                  <div>
+                    <span>Tarif horaire minimum</span>
+                    <strong id="min-hourly-rate">—</strong>
+                  </div>
+                  <div>
+                    <span>Objectif net / heure</span>
+                    <strong id="target-hourly-net">—</strong>
+                  </div>
+                  <div>
+                    <span id="summary-extra-label">—</span>
+                    <strong id="summary-extra-value">—</strong>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Entreprise -->
+            <section class="profil-panel" data-panel="entreprise" hidden>
+              <div class="profil-split">
+                <article class="card">
+                  <h2 class="card__title">Identité & coordonnées</h2>
+                  <p class="card__desc">Affichées sur vos devis, factures et e-mails clients.</p>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field field--full">
+                      <span>Raison sociale / nom commercial</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-name" placeholder="Ex. Dupont Rénovation SARL" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Forme juridique</span>
+                      <div class="field__wrap">
+                        <select id="company-legal-form">
+                          <option value="">— Sélectionner —</option>
+                          <option value="Micro-entreprise">Micro-entreprise</option>
+                          <option value="EI">Entreprise individuelle (EI)</option>
+                          <option value="EURL">EURL</option>
+                          <option value="SARL">SARL</option>
+                          <option value="SASU">SASU</option>
+                          <option value="SAS">SAS</option>
+                          <option value="SA">SA</option>
+                        </select>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Capital social</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-capital" placeholder="Ex. 10 000 €" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>Adresse (ligne complète)</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-address" placeholder="12 rue des Artisans" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Code postal</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-postal-code" placeholder="69000" maxlength="10" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Ville</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-city" placeholder="Lyon" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Téléphone</span>
+                      <div class="field__wrap">
+                        <input type="tel" id="company-phone" placeholder="06 12 34 56 78" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>E-mail professionnel</span>
+                      <div class="field__wrap">
+                        <input type="email" id="company-email" placeholder="contact@exemple.fr" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>Site web</span>
+                      <div class="field__wrap">
+                        <input type="url" id="company-website" placeholder="https://www.exemple.fr" />
+                      </div>
+                    </label>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h2 class="card__title">Immatriculation & fiscalité</h2>
+                  <p class="card__desc">Obligatoire pour les exports FEC et mentions légales sur factures.</p>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field">
+                      <span>SIRET (14 chiffres)</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-siret" placeholder="123 456 789 00012" inputmode="numeric" />
+                      </div>
+                      <small id="siret-hint">Utilisé pour l'export FEC et le pied de page PDF</small>
+                    </label>
+                    <label class="field">
+                      <span>Code APE / NAF</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-ape" placeholder="Ex. 4321A" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>RCS</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-rcs" placeholder="RCS Lyon B 123 456 789" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>N° TVA intracommunautaire</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-tva-intra" placeholder="FR12 345678901" />
+                      </div>
+                    </label>
+                  </div>
+
+                  <h3 class="profile-extra__title" style="margin-top:24px">Assurances & garanties</h3>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field field--full">
+                      <span>Assurance RC professionnelle</span>
+                      <div class="field__wrap">
+                        <input type="text" id="insurance-rc-pro" placeholder="Ex. MMA Pro BTP — police n° …" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>Assurance décennale</span>
+                      <div class="field__wrap">
+                        <input type="text" id="insurance-decennale" placeholder="Ex. AXA Décennale — n° … — zone FR" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>Mention légale complémentaire (pied de page PDF)</span>
+                      <div class="field__wrap">
+                        <textarea id="legal-footer-note" rows="3" placeholder="Ex. Membre du CAPEB — médiateur de la consommation…"></textarea>
+                      </div>
+                    </label>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h2 class="card__title">Pages légales du site</h2>
+                  <p class="card__desc">
+                    Mentions légales, politique de confidentialité, CGU et gestion des données personnelles affichées en bas du site.
+                    Les textes reprennent automatiquement votre raison sociale, adresse, SIRET et contacts lorsque vous appliquez la synchronisation.
+                  </p>
+                  <label class="field field--full" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px">
+                    <input type="checkbox" id="sync-legal-site" style="margin-top:4px" />
+                    <span>Mettre à jour les pages légales du site à chaque enregistrement du profil entreprise</span>
+                  </label>
+                  <div class="form-actions" style="margin:0">
+                    <button type="button" class="btn btn--ghost btn--sm" id="btn-sync-legal-site">Appliquer maintenant aux pages légales</button>
+                    <a href="mentions-legales.html" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Aperçu mentions légales</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Devis & paiements -->
+            <section class="profil-panel" data-panel="devis" hidden>
+              <div class="profil-split">
+                <article class="card">
+                  <h2 class="card__title">Coordonnées bancaires</h2>
+                  <p class="card__desc">Affichées sur les liens de paiement et virements clients.</p>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field field--full">
+                      <span>IBAN</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-iban" placeholder="FR76 1234 5678 9012 3456 7890 123" autocomplete="off" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>BIC</span>
+                      <div class="field__wrap">
+                        <input type="text" id="company-bic" placeholder="BNPAFRPP" autocomplete="off" />
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Établissement bancaire</span>
+                      <div class="field__wrap">
+                        <input type="text" id="bank-name" placeholder="Ex. Crédit Agricole" />
+                      </div>
+                    </label>
+                    <label class="field field--full">
+                      <span>Lien Stripe / paiement carte (optionnel)</span>
+                      <div class="field__wrap">
+                        <input type="url" id="stripe-checkout-url" placeholder="https://buy.stripe.com/…" />
+                      </div>
+                      <small>Carte ou SEPA — proposé sur le lien client si renseigné</small>
+                    </label>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h2 class="card__title">Plan de paiement par défaut</h2>
+                  <p class="card__desc">Appliqué automatiquement à la validation d'un devis. Modifiable aussi devis par devis.</p>
+                  <div class="payment-schedule-editor" id="payment-schedule-editor">
+                    <div class="payment-schedule-editor__head" aria-hidden="true">
+                      <span>Libellé</span>
+                      <span>%</span>
+                      <span>Délai (jours)</span>
+                      <span></span>
+                    </div>
+                    <div id="payment-schedule-rows"></div>
+                    <div class="payment-schedule-editor__foot">
+                      <button type="button" class="btn btn--ghost btn--sm" id="add-payment-schedule-row">+ Échéance</button>
+                      <span class="payment-schedule-editor__total" id="payment-schedule-total">Total : 100 %</span>
+                    </div>
+                    <p class="payment-schedule-editor__hint" id="payment-schedule-error" hidden></p>
+                    <p class="payment-schedule-editor__preview" id="payment-schedule-preview"></p>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <h2 class="card__title">Conditions par défaut des devis</h2>
+                  <p class="card__desc">Pré-remplies sur chaque nouveau devis — synchronisées avec le plan ci-dessus.</p>
+                  <div class="form__grid profil-form-grid">
+                    <label class="field field--full">
+                      <span>Modalités de paiement</span>
+                      <div class="field__wrap">
+                        <textarea id="default-payment-terms" rows="4"></textarea>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Validité du devis</span>
+                      <div class="field__wrap">
+                        <input type="number" id="quote-validity-days" min="1" max="365" step="1" value="30" />
+                        <span class="field__suffix">jours</span>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span>Taux TVA par défaut</span>
+                      <div class="field__wrap">
+                        <select id="default-vat-rate">
+                          <option value="20">20 %</option>
+                          <option value="10">10 %</option>
+                          <option value="5.5">5,5 %</option>
+                          <option value="0">0 %</option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!-- Métré -->
+            <section class="profil-panel" data-panel="metier" hidden>
+              <div class="card">
+                <h2 class="card__title">Corps de métier</h2>
+                <p class="card__desc">Adapte le métré terrain, la bibliothèque et les contrôles réglementaires.</p>
+                <div class="form__grid profil-form-grid">
+                  <label class="field">
+                    <span>Corps de métier principal</span>
+                    <div class="field__wrap">
+                      <select id="trade-type"></select>
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Tarif horaire MO de base (catalogue)</span>
+                    <div class="field__wrap">
+                      <input type="number" id="mo-hourly-rate" min="20" max="200" step="1" value="48" />
+                      <span class="field__suffix" id="mo-hourly-suffix">€ / h</span>
+                    </div>
+                    <small>Utilisé pour les lignes main d'œuvre et le calcul de rentabilité</small>
+                  </label>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top:20px">
+                <h2 class="card__title">Frais de déplacement</h2>
+                <p class="card__desc">Tarifs par défaut injectés dans vos devis — ajustables ligne par ligne.</p>
+                <div class="form__grid profil-form-grid">
+                  <label class="field">
+                    <span>Frais kilométriques</span>
+                    <div class="field__wrap">
+                      <input type="number" id="travel-km-rate" min="0" step="0.01" value="1.2" />
+                      <span class="field__suffix">€ / km</span>
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Forfait dépannage</span>
+                    <div class="field__wrap">
+                      <input type="number" id="travel-depannage" min="0" step="1" value="65" />
+                      <span class="field__suffix">€ HT</span>
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Déplacement journée</span>
+                    <div class="field__wrap">
+                      <input type="number" id="travel-day-rate" min="0" step="1" value="45" />
+                      <span class="field__suffix">€ / jour</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top:20px" id="difficulty-coefficients">
+                <h2 class="card__title">Coefficients pose / difficulté</h2>
+                <p class="card__desc">Majorations sur le matériel (fournitures) par corps d'état — utilisées dans les devis PDF et le bulletin métré. La main d'œuvre n'est pas majorée.</p>
+                <label class="field" style="max-width:320px;margin-bottom:16px">
+                  <span>Métier à configurer</span>
+                  <div class="field__wrap">
+                    <select id="difficulty-trade-select"></select>
+                  </div>
+                </label>
+                <div id="difficulty-coeff-table-wrap"></div>
+                <div class="difficulty-settings__actions">
+                  <button type="button" class="btn btn--ghost btn--sm" id="difficulty-reset-trade">Réinitialiser ce métier</button>
+                  <button type="button" class="btn btn--ghost btn--sm" id="difficulty-reset-all">Tout réinitialiser</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="profil-save-bar">
+            <p id="profil-save-msg" class="profil-save-msg">Modifications non enregistrées</p>
+            <div class="profil-save-actions">
+              <a href="dashboard.html" class="btn btn--ghost">Tableau de bord</a>
+              <button type="submit" class="btn btn--primary">Enregistrer le profil</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Calculs indicatifs — consultez votre expert-comptable pour validation fiscale et sociale.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/profil.js?v=194"></script>
+    <script type="module" src="js/register-sw.js?v=194"></script>
+    <script src="js/back-nav.js?v=194"></script>
+  </body>
+</html>

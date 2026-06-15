@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/app-version-guard.js?v=194"></script>
+    <script type="importmap">
+{"imports":{"/js/version.js":"/js/version.js?v=194","./js/version.js":"/js/version.js?v=194","/js/acces-demo.js":"/js/acces-demo.js?v=194","./js/acces-demo.js":"/js/acces-demo.js?v=194","/js/address-format.js":"/js/address-format.js?v=194","./js/address-format.js":"/js/address-format.js?v=194","/js/ai-assistant.js":"/js/ai-assistant.js?v=194","./js/ai-assistant.js":"/js/ai-assistant.js?v=194","/js/app-config.js":"/js/app-config.js?v=194","./js/app-config.js":"/js/app-config.js?v=194","/js/app-security.js":"/js/app-security.js?v=194","./js/app-security.js":"/js/app-security.js?v=194","/js/app-version-guard.js":"/js/app-version-guard.js?v=194","./js/app-version-guard.js":"/js/app-version-guard.js?v=194","/js/app-viewport.js":"/js/app-viewport.js?v=194","./js/app-viewport.js":"/js/app-viewport.js?v=194","/js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","./js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","/js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","./js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","/js/auth.js":"/js/auth.js?v=194","./js/auth.js":"/js/auth.js?v=194","/js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","./js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","/js/avis-form.js":"/js/avis-form.js?v=194","./js/avis-form.js":"/js/avis-form.js?v=194","/js/avis-gestion.js":"/js/avis-gestion.js?v=194","./js/avis-gestion.js":"/js/avis-gestion.js?v=194","/js/back-nav.js":"/js/back-nav.js?v=194","./js/back-nav.js":"/js/back-nav.js?v=194","/js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","./js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","/js/bibliotheque.js":"/js/bibliotheque.js?v=194","./js/bibliotheque.js":"/js/bibliotheque.js?v=194","/js/brand.js":"/js/brand.js?v=194","./js/brand.js":"/js/brand.js?v=194","/js/calculator.js":"/js/calculator.js?v=194","./js/calculator.js":"/js/calculator.js?v=194","/js/campagnes.js":"/js/campagnes.js?v=194","./js/campagnes.js":"/js/campagnes.js?v=194","/js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","./js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","/js/chantier-detail.js":"/js/chantier-detail.js?v=194","./js/chantier-detail.js":"/js/chantier-detail.js?v=194","/js/chantier-hub.js":"/js/chantier-hub.js?v=194","./js/chantier-hub.js":"/js/chantier-hub.js?v=194","/js/chantiers.js":"/js/chantiers.js?v=194","./js/chantiers.js":"/js/chantiers.js?v=194","/js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","./js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","/js/clients.js":"/js/clients.js?v=194","./js/clients.js":"/js/clients.js?v=194","/js/commercial-store.js":"/js/commercial-store.js?v=194","./js/commercial-store.js":"/js/commercial-store.js?v=194","/js/commercial-sync.js":"/js/commercial-sync.js?v=194","./js/commercial-sync.js":"/js/commercial-sync.js?v=194","/js/compta-engine.js":"/js/compta-engine.js?v=194","./js/compta-engine.js":"/js/compta-engine.js?v=194","/js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","./js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","/js/compta-imputation.js":"/js/compta-imputation.js?v=194","./js/compta-imputation.js":"/js/compta-imputation.js?v=194","/js/compta-store.js":"/js/compta-store.js?v=194","./js/compta-store.js":"/js/compta-store.js?v=194","/js/comptabilite.js":"/js/comptabilite.js?v=194","./js/comptabilite.js":"/js/comptabilite.js?v=194","/js/country-config.js":"/js/country-config.js?v=194","./js/country-config.js":"/js/country-config.js?v=194","/js/currency-format.js":"/js/currency-format.js?v=194","./js/currency-format.js":"/js/currency-format.js?v=194","/js/dashboard.js":"/js/dashboard.js?v=194","./js/dashboard.js":"/js/dashboard.js?v=194","/js/data.js":"/js/data.js?v=194","./js/data.js":"/js/data.js?v=194","/js/demo-seed.js":"/js/demo-seed.js?v=194","./js/demo-seed.js":"/js/demo-seed.js?v=194","/js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","./js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","/js/devis-draft.js":"/js/devis-draft.js?v=194","./js/devis-draft.js":"/js/devis-draft.js?v=194","/js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","./js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","/js/devis-line-types.js":"/js/devis-line-types.js?v=194","./js/devis-line-types.js":"/js/devis-line-types.js?v=194","/js/devis-lines.js":"/js/devis-lines.js?v=194","./js/devis-lines.js":"/js/devis-lines.js?v=194","/js/devis-payments.js":"/js/devis-payments.js?v=194","./js/devis-payments.js":"/js/devis-payments.js?v=194","/js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","./js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","/js/devis.js":"/js/devis.js?v=194","./js/devis.js":"/js/devis.js?v=194","/js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","./js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","/js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","./js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","/js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","./js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","/js/email-verification.js":"/js/email-verification.js?v=194","./js/email-verification.js":"/js/email-verification.js?v=194","/js/employe-historique.js":"/js/employe-historique.js?v=194","./js/employe-historique.js":"/js/employe-historique.js?v=194","/js/employe-index.js":"/js/employe-index.js?v=194","./js/employe-index.js":"/js/employe-index.js?v=194","/js/employe-metre.js":"/js/employe-metre.js?v=194","./js/employe-metre.js":"/js/employe-metre.js?v=194","/js/employe-nav.js":"/js/employe-nav.js?v=194","./js/employe-nav.js":"/js/employe-nav.js?v=194","/js/employe-security.js":"/js/employe-security.js?v=194","./js/employe-security.js":"/js/employe-security.js?v=194","/js/employee-access.js":"/js/employee-access.js?v=194","./js/employee-access.js":"/js/employee-access.js?v=194","/js/employee-auth.js":"/js/employee-auth.js?v=194","./js/employee-auth.js":"/js/employee-auth.js?v=194","/js/employes.js":"/js/employes.js?v=194","./js/employes.js":"/js/employes.js?v=194","/js/i18n.js":"/js/i18n.js?v=194","./js/i18n.js":"/js/i18n.js?v=194","/js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","./js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","/js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","./js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","/js/landing-features.js":"/js/landing-features.js?v=194","./js/landing-features.js":"/js/landing-features.js?v=194","/js/landing-money.js":"/js/landing-money.js?v=194","./js/landing-money.js":"/js/landing-money.js?v=194","/js/landing-nav.js":"/js/landing-nav.js?v=194","./js/landing-nav.js":"/js/landing-nav.js?v=194","/js/legal-content.js":"/js/legal-content.js?v=194","./js/legal-content.js":"/js/legal-content.js?v=194","/js/legal-footer.js":"/js/legal-footer.js?v=194","./js/legal-footer.js":"/js/legal-footer.js?v=194","/js/legal-page.js":"/js/legal-page.js?v=194","./js/legal-page.js":"/js/legal-page.js?v=194","/js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","./js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","/js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","./js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","/js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","./js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","/js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","./js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","/js/locales/messages.js":"/js/locales/messages.js?v=194","./js/locales/messages.js":"/js/locales/messages.js?v=194","/js/market.js":"/js/market.js?v=194","./js/market.js":"/js/market.js?v=194","/js/metre-calculator.js":"/js/metre-calculator.js?v=194","./js/metre-calculator.js":"/js/metre-calculator.js?v=194","/js/metre-constants.js":"/js/metre-constants.js?v=194","./js/metre-constants.js":"/js/metre-constants.js?v=194","/js/metre-templates.js":"/js/metre-templates.js?v=194","./js/metre-templates.js":"/js/metre-templates.js?v=194","/js/metre-validation.js":"/js/metre-validation.js?v=194","./js/metre-validation.js":"/js/metre-validation.js?v=194","/js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","./js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","/js/mobile-env.js":"/js/mobile-env.js?v=194","./js/mobile-env.js":"/js/mobile-env.js?v=194","/js/module-base.js":"/js/module-base.js?v=194","./js/module-base.js":"/js/module-base.js?v=194","/js/module-import.js":"/js/module-import.js?v=194","./js/module-import.js":"/js/module-import.js?v=194","/js/nav-app.js":"/js/nav-app.js?v=194","./js/nav-app.js":"/js/nav-app.js?v=194","/js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","./js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","/js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","./js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","/js/payment-link-service.js":"/js/payment-link-service.js?v=194","./js/payment-link-service.js":"/js/payment-link-service.js?v=194","/js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","./js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","/js/payment-page.js":"/js/payment-page.js?v=194","./js/payment-page.js":"/js/payment-page.js?v=194","/js/payment-plan.js":"/js/payment-plan.js?v=194","./js/payment-plan.js":"/js/payment-plan.js?v=194","/js/payment-store.js":"/js/payment-store.js?v=194","./js/payment-store.js":"/js/payment-store.js?v=194","/js/pdf-devis.js":"/js/pdf-devis.js?v=194","./js/pdf-devis.js":"/js/pdf-devis.js?v=194","/js/planning-calendar.js":"/js/planning-calendar.js?v=194","./js/planning-calendar.js":"/js/planning-calendar.js?v=194","/js/planning-store.js":"/js/planning-store.js?v=194","./js/planning-store.js":"/js/planning-store.js?v=194","/js/planning.js":"/js/planning.js?v=194","./js/planning.js":"/js/planning.js?v=194","/js/prestation-images.js":"/js/prestation-images.js?v=194","./js/prestation-images.js":"/js/prestation-images.js?v=194","/js/prestation-search.js":"/js/prestation-search.js?v=194","./js/prestation-search.js":"/js/prestation-search.js?v=194","/js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","./js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","/js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","./js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","/js/prestations-import.js":"/js/prestations-import.js?v=194","./js/prestations-import.js":"/js/prestations-import.js?v=194","/js/profil.js":"/js/profil.js?v=194","./js/profil.js":"/js/profil.js?v=194","/js/profile-completeness.js":"/js/profile-completeness.js?v=194","./js/profile-completeness.js":"/js/profile-completeness.js?v=194","/js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","./js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","/js/pwa-install.js":"/js/pwa-install.js?v=194","./js/pwa-install.js":"/js/pwa-install.js?v=194","/js/quick-test.js":"/js/quick-test.js?v=194","./js/quick-test.js":"/js/quick-test.js?v=194","/js/quote-pricing.js":"/js/quote-pricing.js?v=194","./js/quote-pricing.js":"/js/quote-pricing.js?v=194","/js/quote-sections.js":"/js/quote-sections.js?v=194","./js/quote-sections.js":"/js/quote-sections.js?v=194","/js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","./js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","/js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","./js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","/js/register-sw.js":"/js/register-sw.js?v=194","./js/register-sw.js":"/js/register-sw.js?v=194","/js/renta-demo.js":"/js/renta-demo.js?v=194","./js/renta-demo.js":"/js/renta-demo.js?v=194","/js/signature-pad.js":"/js/signature-pad.js?v=194","./js/signature-pad.js":"/js/signature-pad.js?v=194","/js/simulation-metre.js":"/js/simulation-metre.js?v=194","./js/simulation-metre.js":"/js/simulation-metre.js?v=194","/js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","./js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","/js/site-publisher.js":"/js/site-publisher.js?v=194","./js/site-publisher.js":"/js/site-publisher.js?v=194","/js/site-services.js":"/js/site-services.js?v=194","./js/site-services.js":"/js/site-services.js?v=194","/js/statistiques.js":"/js/statistiques.js?v=194","./js/statistiques.js":"/js/statistiques.js?v=194","/js/storage-guard.js":"/js/storage-guard.js?v=194","./js/storage-guard.js":"/js/storage-guard.js?v=194","/js/storage-repair.js":"/js/storage-repair.js?v=194","./js/storage-repair.js":"/js/storage-repair.js?v=194","/js/storage.js":"/js/storage.js?v=194","./js/storage.js":"/js/storage.js?v=194","/js/subscription.js":"/js/subscription.js?v=194","./js/subscription.js":"/js/subscription.js?v=194","/js/support-store.js":"/js/support-store.js?v=194","./js/support-store.js":"/js/support-store.js?v=194","/js/support.js":"/js/support.js?v=194","./js/support.js":"/js/support.js?v=194","/js/tarifs.js":"/js/tarifs.js?v=194","./js/tarifs.js":"/js/tarifs.js?v=194","/js/testimonials-render.js":"/js/testimonials-render.js?v=194","./js/testimonials-render.js":"/js/testimonials-render.js?v=194","/js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","./js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","/js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","./js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","/js/travel-fees.js":"/js/travel-fees.js?v=194","./js/travel-fees.js":"/js/travel-fees.js?v=194","/js/trial.js":"/js/trial.js?v=194","./js/trial.js":"/js/trial.js?v=194","/js/utils.js":"/js/utils.js?v=194","./js/utils.js":"/js/utils.js?v=194"},"scopes":{"/js/locales/":{"./app-ui.js":"./app-ui.js?v=194","./catalog-meta.js":"./catalog-meta.js?v=194","./landing-content.js":"./landing-content.js?v=194","./messages.js":"./messages.js?v=194"},"/js/":{"./acces-demo.js":"./acces-demo.js?v=194","./address-format.js":"./address-format.js?v=194","./ai-assistant.js":"./ai-assistant.js?v=194","./app-config.js":"./app-config.js?v=194","./app-security.js":"./app-security.js?v=194","./app-version-guard.js":"./app-version-guard.js?v=194","./app-viewport.js":"./app-viewport.js?v=194","./assistant-knowledge.js":"./assistant-knowledge.js?v=194","./auth-otp-ui.js":"./auth-otp-ui.js?v=194","./auth.js":"./auth.js?v=194","./auto-image-fetch.js":"./auto-image-fetch.js?v=194","./avis-form.js":"./avis-form.js?v=194","./avis-gestion.js":"./avis-gestion.js?v=194","./back-nav.js":"./back-nav.js?v=194","./batiprix-catalog.js":"./batiprix-catalog.js?v=194","./bibliotheque.js":"./bibliotheque.js?v=194","./brand.js":"./brand.js?v=194","./calculator.js":"./calculator.js?v=194","./campagnes.js":"./campagnes.js?v=194","./catalog-i18n.js":"./catalog-i18n.js?v=194","./chantier-detail.js":"./chantier-detail.js?v=194","./chantier-hub.js":"./chantier-hub.js?v=194","./chantiers.js":"./chantiers.js?v=194","./client-quote-visibility.js":"./client-quote-visibility.js?v=194","./clients.js":"./clients.js?v=194","./commercial-store.js":"./commercial-store.js?v=194","./commercial-sync.js":"./commercial-sync.js?v=194","./compta-engine.js":"./compta-engine.js?v=194","./compta-fec-export.js":"./compta-fec-export.js?v=194","./compta-imputation.js":"./compta-imputation.js?v=194","./compta-store.js":"./compta-store.js?v=194","./comptabilite.js":"./comptabilite.js?v=194","./country-config.js":"./country-config.js?v=194","./currency-format.js":"./currency-format.js?v=194","./dashboard.js":"./dashboard.js?v=194","./data.js":"./data.js?v=194","./demo-seed.js":"./demo-seed.js?v=194","./devis-draft-store.js":"./devis-draft-store.js?v=194","./devis-draft.js":"./devis-draft.js?v=194","./devis-fee-templates.js":"./devis-fee-templates.js?v=194","./devis-line-types.js":"./devis-line-types.js?v=194","./devis-lines.js":"./devis-lines.js?v=194","./devis-payments.js":"./devis-payments.js?v=194","./devis-table-fit.js":"./devis-table-fit.js?v=194","./devis.js":"./devis.js?v=194","./diagnostic-report.js":"./diagnostic-report.js?v=194","./difficulty-coefficients-store.js":"./difficulty-coefficients-store.js?v=194","./difficulty-settings.js":"./difficulty-settings.js?v=194","./email-verification.js":"./email-verification.js?v=194","./employe-historique.js":"./employe-historique.js?v=194","./employe-index.js":"./employe-index.js?v=194","./employe-metre.js":"./employe-metre.js?v=194","./employe-nav.js":"./employe-nav.js?v=194","./employe-security.js":"./employe-security.js?v=194","./employee-access.js":"./employee-access.js?v=194","./employee-auth.js":"./employee-auth.js?v=194","./employes.js":"./employes.js?v=194","./i18n.js":"./i18n.js?v=194","./installation-difficulty.js":"./installation-difficulty.js?v=194","./landing-faq-i18n.js":"./landing-faq-i18n.js?v=194","./landing-features.js":"./landing-features.js?v=194","./landing-money.js":"./landing-money.js?v=194","./landing-nav.js":"./landing-nav.js?v=194","./legal-content.js":"./legal-content.js?v=194","./legal-footer.js":"./legal-footer.js?v=194","./legal-page.js":"./legal-page.js?v=194","./leroy-merlin.js":"./leroy-merlin.js?v=194","./market.js":"./market.js?v=194","./metre-calculator.js":"./metre-calculator.js?v=194","./metre-constants.js":"./metre-constants.js?v=194","./metre-templates.js":"./metre-templates.js?v=194","./metre-validation.js":"./metre-validation.js?v=194","./mobile-bottom-nav.js":"./mobile-bottom-nav.js?v=194","./mobile-env.js":"./mobile-env.js?v=194","./module-base.js":"./module-base.js?v=194","./module-import.js":"./module-import.js?v=194","./nav-app.js":"./nav-app.js?v=194","./nav-menu-bootstrap.js":"./nav-menu-bootstrap.js?v=194","./nav-prefs-html.js":"./nav-prefs-html.js?v=194","./payment-link-service.js":"./payment-link-service.js?v=194","./payment-link.codec.js":"./payment-link.codec.js?v=194","./payment-page.js":"./payment-page.js?v=194","./payment-plan.js":"./payment-plan.js?v=194","./payment-store.js":"./payment-store.js?v=194","./pdf-devis.js":"./pdf-devis.js?v=194","./planning-calendar.js":"./planning-calendar.js?v=194","./planning-store.js":"./planning-store.js?v=194","./planning.js":"./planning.js?v=194","./prestation-images.js":"./prestation-images.js?v=194","./prestation-search.js":"./prestation-search.js?v=194","./prestation-svg-thumbs.js":"./prestation-svg-thumbs.js?v=194","./prestations-catalog.js":"./prestations-catalog.js?v=194","./prestations-import.js":"./prestations-import.js?v=194","./profil.js":"./profil.js?v=194","./profile-completeness.js":"./profile-completeness.js?v=194","./pwa-bootstrap.js":"./pwa-bootstrap.js?v=194","./pwa-install.js":"./pwa-install.js?v=194","./quick-test.js":"./quick-test.js?v=194","./quote-pricing.js":"./quote-pricing.js?v=194","./quote-sections.js":"./quote-sections.js?v=194","./rdv-reminder-init.js":"./rdv-reminder-init.js?v=194","./rdv-reminder-service.js":"./rdv-reminder-service.js?v=194","./register-sw.js":"./register-sw.js?v=194","./renta-demo.js":"./renta-demo.js?v=194","./signature-pad.js":"./signature-pad.js?v=194","./simulation-metre.js":"./simulation-metre.js?v=194","./site-publisher.defaults.js":"./site-publisher.defaults.js?v=194","./site-publisher.js":"./site-publisher.js?v=194","./site-services.js":"./site-services.js?v=194","./statistiques.js":"./statistiques.js?v=194","./storage-guard.js":"./storage-guard.js?v=194","./storage-repair.js":"./storage-repair.js?v=194","./storage.js":"./storage.js?v=194","./subscription.js":"./subscription.js?v=194","./support-store.js":"./support-store.js?v=194","./support.js":"./support.js?v=194","./tarifs.js":"./tarifs.js?v=194","./testimonials-render.js":"./testimonials-render.js?v=194","./testimonials-seed.js":"./testimonials-seed.js?v=194","./trade-catalog-extensions.js":"./trade-catalog-extensions.js?v=194","./travel-fees.js":"./travel-fees.js?v=194","./trial.js":"./trial.js?v=194","./utils.js":"./utils.js?v=194","./version.js":"./version.js?v=194"}}}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script src="js/devis-table-fit.js?v=194"></script>
+    <script src="js/mobile-env.js?v=194"></script>
+    <script src="js/app-viewport.js?v=194"></script>
+    <meta name="theme-color" content="#6665dd" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Analyser un devis — Exxon-bat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css?v=194" />
+    <link rel="stylesheet" href="css/app.css?v=194" />
+    <link rel="stylesheet" href="css/mobile-nav.css?v=194" />
+    <link rel="stylesheet" href="css/mobile-app.css?v=194" />
+    <link rel="stylesheet" href="css/payments.css?v=194" />
+    <link rel="stylesheet" href="css/commercial.css?v=194" />
+  </head>
+  <body class="devis-page">
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="index.html" class="brand">
+          <div class="brand__logo" data-brand-logo aria-hidden="true"></div>
+          <div class="brand__text">
+            <span class="brand__name">Exxon-bat</span>
+            <span class="brand__tag">Analyse de devis</span>
+          </div>
+        </a>
+        <div class="nav__links">
+          <a href="dashboard.html" data-nav="dashboard" class="nav__link">Accueil</a>
+          <a href="devis.html" data-nav="devis" class="nav__link nav__link--active" data-i18n="nav.quotesInvoices">Devis & factures</a>
+          <a href="devis.html#rentabilite" data-nav="rentabilite" class="nav__link" data-i18n="nav.rentability">Rentabilité</a>
+          <a href="bibliotheque.html" data-nav="prestations" class="nav__link">Bibliothèque</a>
+          <a href="clients.html" data-nav="clients" class="nav__link">Clients</a>
+          <a href="chantiers.html" data-nav="chantiers" class="nav__link">Chantiers</a>
+          <a href="statistiques.html" data-nav="statistiques" class="nav__link">Stats</a>
+          <a href="tarifs.html" data-nav="tarifs" class="nav__link">Tarifs</a>
+          <span id="nav-user" class="nav__user"></span>
+          <a href="#" id="nav-logout" class="nav__link">Déconnexion</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="devis-subnav" id="devis-subnav" aria-label="Navigation du devis">
+      <button type="button" class="devis-subnav__back" id="devis-subnav-back" aria-label="Retour">
+        <span aria-hidden="true">←</span>
+      </button>
+      <nav class="devis-page-nav" aria-label="Sections du devis">
+        <a href="#devis-lines-section" class="devis-page-nav__link is-active" data-short="Lignes">Bibliothèque &amp; lignes</a>
+        <a href="#rentabilite" class="devis-page-nav__link" data-short="Rentabilité">Rentabilité</a>
+        <a href="#quote-client-section" class="devis-page-nav__link" data-short="Client">Client &amp; saisie</a>
+      </nav>
+    </div>
+
+    <main class="app-page">
+      <div class="container">
+        <div class="steps">
+          <div class="step step--done">
+            <span class="step__num">✓</span>
+            <span>Mon profil</span>
+          </div>
+          <div class="step__line step__line--done"></div>
+          <div class="step step--active">
+            <span class="step__num">2</span>
+            <span>Analyser un devis</span>
+          </div>
+        </div>
+
+        <div class="app-page__head app-page__head--with-action">
+          <div>
+            <h1 id="devis-page-title">Votre devis est-il rentable ?</h1>
+            <p id="devis-page-subtitle">Saisissez les détails de la prestation — le verdict s'affiche en direct.</p>
+          </div>
+          <button type="button" class="btn btn--primary btn--lg js-export-pdf" id="export-pdf-head" disabled>
+            Aperçu du devis →
+          </button>
+        </div>
+
+        <div class="devis-doc-type-row">
+        <div class="doc-type-switch" id="doc-type-switch">
+          <button type="button" class="doc-type-switch__btn is-active" data-doc-type="devis">Devis</button>
+          <button type="button" class="doc-type-switch__btn" data-doc-type="facture">Facture</button>
+        </div>
+        <p class="card__desc doc-type-switch__hint" id="doc-sync-hint">
+          Client, lignes et montants sont partagés entre devis et facture — pas besoin de tout ressaisir.
+        </p>
+        </div>
+
+        <div class="profile-strip" id="profile-strip">
+          <span class="profile-strip__item profile-strip__item--plan" id="strip-plan">Offre : —</span>
+          <span class="profile-strip__item" id="strip-type">Profil : —</span>
+          <span class="profile-strip__item" id="strip-net">Objectif : —</span>
+          <span class="profile-strip__item" id="strip-hourly">Tarif min. : —</span>
+          <a href="profil.html" class="profile-strip__edit">Modifier le profil</a>
+        </div>
+
+        <div class="devis-preview-bar" id="devis-preview-bar" role="region" aria-label="Aperçu PDF">
+          <div class="devis-preview-bar__inner">
+            <div class="devis-preview-bar__text">
+              <strong class="devis-preview-bar__title" id="devis-preview-bar-title">Aperçu du devis</strong>
+              <span class="devis-preview-bar__hint" id="devis-preview-bar-hint">
+                Toujours visible en bas — aperçu et impression en un clic
+              </span>
+            </div>
+            <div class="devis-preview-bar__actions">
+              <button type="button" class="btn btn--ghost btn--lg js-print-devis" id="print-devis" disabled>
+                Imprimer
+              </button>
+              <button type="button" class="btn btn--primary btn--lg js-export-pdf" id="export-pdf" disabled>
+                Aperçu →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="devis-workspace">
+          <section class="card devis-workspace__compose">
+            <h2 class="card__title" id="quote-form-title">Détails du devis</h2>
+            <p class="card__desc" id="quote-form-desc">Nom, prix, temps et coûts de la prestation.</p>
+
+            <form id="quote-form">
+              <div class="form-section form-section--library" id="devis-lines-section">
+                <div id="devis-lines-root"></div>
+              </div>
+
+              <div class="form-section" id="quote-client-section">
+                <h3 class="form-section__title">Client</h3>
+                <label class="field" style="margin-bottom:14px">
+                  <span>Client enregistré</span>
+                  <div class="field__wrap">
+                    <select id="client-select">
+                      <option value="">— Saisie manuelle —</option>
+                    </select>
+                  </div>
+                </label>
+                <div class="form__grid">
+                  <label class="field">
+                    <span>Prénom</span>
+                    <div class="field__wrap">
+                      <input type="text" id="client-firstname" placeholder="Jean" autocomplete="given-name" />
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Nom</span>
+                    <div class="field__wrap">
+                      <input type="text" id="client-name" placeholder="Martin" />
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>E-mail</span>
+                    <div class="field__wrap">
+                      <input type="email" id="client-email" placeholder="client@exemple.fr" />
+                    </div>
+                  </label>
+                  <label class="field" style="grid-column:1/-1">
+                    <span>Adresse</span>
+                    <div class="field__wrap">
+                      <input type="text" id="client-address" placeholder="45 avenue de la République" />
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Code postal</span>
+                    <div class="field__wrap">
+                      <input type="text" id="client-postal-code" placeholder="69000" maxlength="10" required />
+                    </div>
+                  </label>
+                  <label class="field">
+                    <span>Ville</span>
+                    <div class="field__wrap">
+                      <input type="text" id="client-city" placeholder="Lyon" required />
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-section" id="quote-simple-section">
+                <h3 class="form-section__title">Saisie rapide (alternative)</h3>
+                <p class="card__desc" style="margin:-4px 0 14px" id="quote-simple-desc">Optionnel — composez d'abord votre devis via la bibliothèque ci-dessus.</p>
+              <label class="field" style="margin-bottom:18px">
+                <span>Nom de la prestation</span>
+                <div class="field__wrap">
+                  <input
+                    type="text"
+                    id="job-name"
+                    placeholder="Ex. Rénovation salle de bain complète"
+                  />
+                </div>
+              </label>
+
+              <div class="form__grid">
+                <label class="field">
+                  <span>Prix total HT client</span>
+                  <div class="field__wrap">
+                    <input type="number" id="quote-price" min="0" step="10" value="1200" />
+                    <span class="field__suffix">€</span>
+                  </div>
+                  <small>Main d'œuvre + matériel facturés au client</small>
+                </label>
+
+                <label class="field">
+                  <span>Temps estimé</span>
+                  <div class="field__wrap field__wrap--hours-stepper">
+                    <button type="button" class="quote-hours-step" id="quote-hours-down" aria-label="Diminuer les heures">−</button>
+                    <input type="number" id="quote-hours" min="1" step="1" value="16" inputmode="numeric" />
+                    <button type="button" class="quote-hours-step" id="quote-hours-up" aria-label="Augmenter les heures">+</button>
+                    <span class="field__suffix">h</span>
+                  </div>
+                  <small id="quote-hours-hint">Durée totale de la prestation.</small>
+                </label>
+
+                <label class="field">
+                  <span>Prix matériel client HT</span>
+                  <div class="field__wrap">
+                    <input type="number" id="material-sell" min="0" step="10" value="200" />
+                    <span class="field__suffix">€</span>
+                  </div>
+                  <small>Visible sur le devis imprimé — min. ×2 l'achat</small>
+                </label>
+              </div>
+
+              <div class="profile-extra" style="margin-top:18px;background:#f1f5f9;border-color:#cbd5e1">
+                <h3 class="profile-extra__title">Coûts internes (employeur uniquement)</h3>
+                <label class="field">
+                  <span>Achat matériel fournisseur HT</span>
+                  <div class="field__wrap">
+                    <input type="number" id="material-purchase" min="0" step="10" value="100" />
+                    <span class="field__suffix">€</span>
+                  </div>
+                  <small>Jamais visible sur le devis client — sert au calcul de marge</small>
+                </label>
+                <p id="material-markup-hint" class="export-actions__hint" style="text-align:left;margin:8px 0 0"></p>
+              </div>
+
+              <div data-quote-panel="tpe" class="profile-extra" hidden>
+                <label class="field">
+                  <span>Heures salariés sur cette prestation</span>
+                  <div class="field__wrap">
+                    <input type="number" id="employee-hours" min="0" step="1" value="12" />
+                    <span class="field__suffix">h</span>
+                  </div>
+                </label>
+              </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="card result-panel result-panel--prominent devis-workspace__renta" id="rentabilite" aria-live="polite">
+            <h2 class="card__title">Rentabilité — verdict en direct</h2>
+            <p class="card__desc" id="result-disclaimer">Calcul en cours…</p>
+
+            <div id="result-empty" class="result-panel--empty">
+              <div class="result-panel__icon">📊</div>
+              <p>Ajoutez des lignes bibliothèque ou un prix — le verdict s'affiche ici à droite (ou en dessous sur mobile).</p>
+            </div>
+
+            <div id="result-content" hidden>
+              <div class="verdict" id="verdict">
+                <div class="verdict__icon" id="verdict-icon">—</div>
+                <div>
+                  <p class="verdict__label" id="verdict-label">—</p>
+                  <p class="verdict__msg" id="verdict-msg">—</p>
+                </div>
+              </div>
+
+              <div class="metrics">
+                <article class="metric">
+                  <span>Marge nette</span>
+                  <strong id="net-estimated">—</strong>
+                </article>
+                <article class="metric metric--highlight">
+                  <span>Prix minimum conseillé</span>
+                  <strong id="min-price">—</strong>
+                </article>
+                <article class="metric">
+                  <span>Taux horaire net</span>
+                  <strong id="real-hourly">—</strong>
+                </article>
+                <article class="metric">
+                  <span>Taux de marge</span>
+                  <strong id="margin-rate">—</strong>
+                </article>
+                <article class="metric">
+                  <span>Objectif net</span>
+                  <strong id="target-net">—</strong>
+                </article>
+                <article class="metric">
+                  <span>Achat fournisseur</span>
+                  <strong id="direct-cost">—</strong>
+                </article>
+              </div>
+
+              <details class="breakdown">
+                <summary>Détail du calcul</summary>
+                <ul id="breakdown-list"></ul>
+              </details>
+            </div>
+          </section>
+        </div>
+
+        <section class="card payments-panel" id="payments-panel" hidden>
+          <div class="payments-panel__head">
+            <h2>Encaissements & paiements</h2>
+            <p>Suivez les règlements, envoyez un plan de paiement en plusieurs fois après validation du devis, et gérez les relances.</p>
+          </div>
+          <div class="payments-layout">
+            <div class="payments-list" id="payments-list"></div>
+            <div id="payments-detail"></div>
+          </div>
+        </section>
+
+        <section class="card devis-history" style="margin-top:32px">
+          <h2 class="card__title">Devis & factures récents</h2>
+          <p class="card__desc">Devis et factures validés à l'impression — reprenez un document ou facturez en un clic.</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Imprimé le</th>
+                  <th>Prestation</th>
+                  <th>Client</th>
+                  <th>Prix HT</th>
+                  <th>Rentabilité</th>
+                  <th id="devis-commercial-col">Commercial</th>
+                  <th id="devis-payment-col">Paiement</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="devis-history"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Exxon-bat — V2 · Devis PDF avec analyse de rentabilité intégrée</p>
+      </div>
+    </footer>
+
+    <script src="js/storage-guard.js?v=194"></script>
+    <script type="module" src="js/devis.js?v=194"></script>
+    <script type="module" src="js/register-sw.js?v=194"></script>
+    <script src="js/back-nav.js?v=194"></script>
+  </body>
+</html>

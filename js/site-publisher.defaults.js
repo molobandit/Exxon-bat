@@ -1,0 +1,27 @@
+/** Valeurs par défaut de l'éditeur du site — modifiables ici avant déploiement. */
+export const DEFAULT_SITE_PUBLISHER = {
+  companyName: "Exxon-bat",
+  companyLegalForm: "SAS",
+  companyAddress: "12 rue des Artisans",
+  companyPostalCode: "69000",
+  companyCity: "Lyon",
+  companyCountry: "France",
+  companySiret: "",
+  companyRcs: "",
+  companyTvaIntra: "",
+  companyApe: "6201Z",
+  companyCapital: "",
+  companyPhone: "01 84 80 42 10",
+  companyEmail: "contact@exxon-bat.com",
+  companyWebsite: "https://www.exxon-bat.com",
+  privacyEmail: "privacy@exxon-bat.com",
+  supportEmail: "support@exxon-bat.com",
+  dpoName: "",
+  hostingProvider: "Prestataire d'hébergement web certifié",
+  hostingAddress: "Union européenne",
+  mediatorName: "",
+  mediatorUrl: "",
+  appName: "Exxon-bat",
+  appDescription:
+    "logiciel en ligne de devis, facturation, rentabilité, planning chantiers et métré terrain pour artisans du BTP",
+};

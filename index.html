@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/app-version-guard.js?v=194"></script>
+    <script type="importmap">
+{"imports":{"/js/version.js":"/js/version.js?v=194","./js/version.js":"/js/version.js?v=194","/js/acces-demo.js":"/js/acces-demo.js?v=194","./js/acces-demo.js":"/js/acces-demo.js?v=194","/js/address-format.js":"/js/address-format.js?v=194","./js/address-format.js":"/js/address-format.js?v=194","/js/ai-assistant.js":"/js/ai-assistant.js?v=194","./js/ai-assistant.js":"/js/ai-assistant.js?v=194","/js/app-config.js":"/js/app-config.js?v=194","./js/app-config.js":"/js/app-config.js?v=194","/js/app-security.js":"/js/app-security.js?v=194","./js/app-security.js":"/js/app-security.js?v=194","/js/app-version-guard.js":"/js/app-version-guard.js?v=194","./js/app-version-guard.js":"/js/app-version-guard.js?v=194","/js/app-viewport.js":"/js/app-viewport.js?v=194","./js/app-viewport.js":"/js/app-viewport.js?v=194","/js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","./js/assistant-knowledge.js":"/js/assistant-knowledge.js?v=194","/js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","./js/auth-otp-ui.js":"/js/auth-otp-ui.js?v=194","/js/auth.js":"/js/auth.js?v=194","./js/auth.js":"/js/auth.js?v=194","/js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","./js/auto-image-fetch.js":"/js/auto-image-fetch.js?v=194","/js/avis-form.js":"/js/avis-form.js?v=194","./js/avis-form.js":"/js/avis-form.js?v=194","/js/avis-gestion.js":"/js/avis-gestion.js?v=194","./js/avis-gestion.js":"/js/avis-gestion.js?v=194","/js/back-nav.js":"/js/back-nav.js?v=194","./js/back-nav.js":"/js/back-nav.js?v=194","/js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","./js/batiprix-catalog.js":"/js/batiprix-catalog.js?v=194","/js/bibliotheque.js":"/js/bibliotheque.js?v=194","./js/bibliotheque.js":"/js/bibliotheque.js?v=194","/js/brand.js":"/js/brand.js?v=194","./js/brand.js":"/js/brand.js?v=194","/js/calculator.js":"/js/calculator.js?v=194","./js/calculator.js":"/js/calculator.js?v=194","/js/campagnes.js":"/js/campagnes.js?v=194","./js/campagnes.js":"/js/campagnes.js?v=194","/js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","./js/catalog-i18n.js":"/js/catalog-i18n.js?v=194","/js/chantier-detail.js":"/js/chantier-detail.js?v=194","./js/chantier-detail.js":"/js/chantier-detail.js?v=194","/js/chantier-hub.js":"/js/chantier-hub.js?v=194","./js/chantier-hub.js":"/js/chantier-hub.js?v=194","/js/chantiers.js":"/js/chantiers.js?v=194","./js/chantiers.js":"/js/chantiers.js?v=194","/js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","./js/client-quote-visibility.js":"/js/client-quote-visibility.js?v=194","/js/clients.js":"/js/clients.js?v=194","./js/clients.js":"/js/clients.js?v=194","/js/commercial-store.js":"/js/commercial-store.js?v=194","./js/commercial-store.js":"/js/commercial-store.js?v=194","/js/commercial-sync.js":"/js/commercial-sync.js?v=194","./js/commercial-sync.js":"/js/commercial-sync.js?v=194","/js/compta-engine.js":"/js/compta-engine.js?v=194","./js/compta-engine.js":"/js/compta-engine.js?v=194","/js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","./js/compta-fec-export.js":"/js/compta-fec-export.js?v=194","/js/compta-imputation.js":"/js/compta-imputation.js?v=194","./js/compta-imputation.js":"/js/compta-imputation.js?v=194","/js/compta-store.js":"/js/compta-store.js?v=194","./js/compta-store.js":"/js/compta-store.js?v=194","/js/comptabilite.js":"/js/comptabilite.js?v=194","./js/comptabilite.js":"/js/comptabilite.js?v=194","/js/country-config.js":"/js/country-config.js?v=194","./js/country-config.js":"/js/country-config.js?v=194","/js/currency-format.js":"/js/currency-format.js?v=194","./js/currency-format.js":"/js/currency-format.js?v=194","/js/dashboard.js":"/js/dashboard.js?v=194","./js/dashboard.js":"/js/dashboard.js?v=194","/js/data.js":"/js/data.js?v=194","./js/data.js":"/js/data.js?v=194","/js/demo-seed.js":"/js/demo-seed.js?v=194","./js/demo-seed.js":"/js/demo-seed.js?v=194","/js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","./js/devis-draft-store.js":"/js/devis-draft-store.js?v=194","/js/devis-draft.js":"/js/devis-draft.js?v=194","./js/devis-draft.js":"/js/devis-draft.js?v=194","/js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","./js/devis-fee-templates.js":"/js/devis-fee-templates.js?v=194","/js/devis-line-types.js":"/js/devis-line-types.js?v=194","./js/devis-line-types.js":"/js/devis-line-types.js?v=194","/js/devis-lines.js":"/js/devis-lines.js?v=194","./js/devis-lines.js":"/js/devis-lines.js?v=194","/js/devis-payments.js":"/js/devis-payments.js?v=194","./js/devis-payments.js":"/js/devis-payments.js?v=194","/js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","./js/devis-table-fit.js":"/js/devis-table-fit.js?v=194","/js/devis.js":"/js/devis.js?v=194","./js/devis.js":"/js/devis.js?v=194","/js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","./js/diagnostic-report.js":"/js/diagnostic-report.js?v=194","/js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","./js/difficulty-coefficients-store.js":"/js/difficulty-coefficients-store.js?v=194","/js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","./js/difficulty-settings.js":"/js/difficulty-settings.js?v=194","/js/email-verification.js":"/js/email-verification.js?v=194","./js/email-verification.js":"/js/email-verification.js?v=194","/js/employe-historique.js":"/js/employe-historique.js?v=194","./js/employe-historique.js":"/js/employe-historique.js?v=194","/js/employe-index.js":"/js/employe-index.js?v=194","./js/employe-index.js":"/js/employe-index.js?v=194","/js/employe-metre.js":"/js/employe-metre.js?v=194","./js/employe-metre.js":"/js/employe-metre.js?v=194","/js/employe-nav.js":"/js/employe-nav.js?v=194","./js/employe-nav.js":"/js/employe-nav.js?v=194","/js/employe-security.js":"/js/employe-security.js?v=194","./js/employe-security.js":"/js/employe-security.js?v=194","/js/employee-access.js":"/js/employee-access.js?v=194","./js/employee-access.js":"/js/employee-access.js?v=194","/js/employee-auth.js":"/js/employee-auth.js?v=194","./js/employee-auth.js":"/js/employee-auth.js?v=194","/js/employes.js":"/js/employes.js?v=194","./js/employes.js":"/js/employes.js?v=194","/js/i18n.js":"/js/i18n.js?v=194","./js/i18n.js":"/js/i18n.js?v=194","/js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","./js/installation-difficulty.js":"/js/installation-difficulty.js?v=194","/js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","./js/landing-faq-i18n.js":"/js/landing-faq-i18n.js?v=194","/js/landing-features.js":"/js/landing-features.js?v=194","./js/landing-features.js":"/js/landing-features.js?v=194","/js/landing-money.js":"/js/landing-money.js?v=194","./js/landing-money.js":"/js/landing-money.js?v=194","/js/landing-nav.js":"/js/landing-nav.js?v=194","./js/landing-nav.js":"/js/landing-nav.js?v=194","/js/legal-content.js":"/js/legal-content.js?v=194","./js/legal-content.js":"/js/legal-content.js?v=194","/js/legal-footer.js":"/js/legal-footer.js?v=194","./js/legal-footer.js":"/js/legal-footer.js?v=194","/js/legal-page.js":"/js/legal-page.js?v=194","./js/legal-page.js":"/js/legal-page.js?v=194","/js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","./js/leroy-merlin.js":"/js/leroy-merlin.js?v=194","/js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","./js/locales/app-ui.js":"/js/locales/app-ui.js?v=194","/js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","./js/locales/catalog-meta.js":"/js/locales/catalog-meta.js?v=194","/js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","./js/locales/landing-content.js":"/js/locales/landing-content.js?v=194","/js/locales/messages.js":"/js/locales/messages.js?v=194","./js/locales/messages.js":"/js/locales/messages.js?v=194","/js/market.js":"/js/market.js?v=194","./js/market.js":"/js/market.js?v=194","/js/metre-calculator.js":"/js/metre-calculator.js?v=194","./js/metre-calculator.js":"/js/metre-calculator.js?v=194","/js/metre-constants.js":"/js/metre-constants.js?v=194","./js/metre-constants.js":"/js/metre-constants.js?v=194","/js/metre-templates.js":"/js/metre-templates.js?v=194","./js/metre-templates.js":"/js/metre-templates.js?v=194","/js/metre-validation.js":"/js/metre-validation.js?v=194","./js/metre-validation.js":"/js/metre-validation.js?v=194","/js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","./js/mobile-bottom-nav.js":"/js/mobile-bottom-nav.js?v=194","/js/mobile-env.js":"/js/mobile-env.js?v=194","./js/mobile-env.js":"/js/mobile-env.js?v=194","/js/module-base.js":"/js/module-base.js?v=194","./js/module-base.js":"/js/module-base.js?v=194","/js/module-import.js":"/js/module-import.js?v=194","./js/module-import.js":"/js/module-import.js?v=194","/js/nav-app.js":"/js/nav-app.js?v=194","./js/nav-app.js":"/js/nav-app.js?v=194","/js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","./js/nav-menu-bootstrap.js":"/js/nav-menu-bootstrap.js?v=194","/js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","./js/nav-prefs-html.js":"/js/nav-prefs-html.js?v=194","/js/payment-link-service.js":"/js/payment-link-service.js?v=194","./js/payment-link-service.js":"/js/payment-link-service.js?v=194","/js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","./js/payment-link.codec.js":"/js/payment-link.codec.js?v=194","/js/payment-page.js":"/js/payment-page.js?v=194","./js/payment-page.js":"/js/payment-page.js?v=194","/js/payment-plan.js":"/js/payment-plan.js?v=194","./js/payment-plan.js":"/js/payment-plan.js?v=194","/js/payment-store.js":"/js/payment-store.js?v=194","./js/payment-store.js":"/js/payment-store.js?v=194","/js/pdf-devis.js":"/js/pdf-devis.js?v=194","./js/pdf-devis.js":"/js/pdf-devis.js?v=194","/js/planning-calendar.js":"/js/planning-calendar.js?v=194","./js/planning-calendar.js":"/js/planning-calendar.js?v=194","/js/planning-store.js":"/js/planning-store.js?v=194","./js/planning-store.js":"/js/planning-store.js?v=194","/js/planning.js":"/js/planning.js?v=194","./js/planning.js":"/js/planning.js?v=194","/js/prestation-images.js":"/js/prestation-images.js?v=194","./js/prestation-images.js":"/js/prestation-images.js?v=194","/js/prestation-search.js":"/js/prestation-search.js?v=194","./js/prestation-search.js":"/js/prestation-search.js?v=194","/js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","./js/prestation-svg-thumbs.js":"/js/prestation-svg-thumbs.js?v=194","/js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","./js/prestations-catalog.js":"/js/prestations-catalog.js?v=194","/js/prestations-import.js":"/js/prestations-import.js?v=194","./js/prestations-import.js":"/js/prestations-import.js?v=194","/js/profil.js":"/js/profil.js?v=194","./js/profil.js":"/js/profil.js?v=194","/js/profile-completeness.js":"/js/profile-completeness.js?v=194","./js/profile-completeness.js":"/js/profile-completeness.js?v=194","/js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","./js/pwa-bootstrap.js":"/js/pwa-bootstrap.js?v=194","/js/pwa-install.js":"/js/pwa-install.js?v=194","./js/pwa-install.js":"/js/pwa-install.js?v=194","/js/quick-test.js":"/js/quick-test.js?v=194","./js/quick-test.js":"/js/quick-test.js?v=194","/js/quote-pricing.js":"/js/quote-pricing.js?v=194","./js/quote-pricing.js":"/js/quote-pricing.js?v=194","/js/quote-sections.js":"/js/quote-sections.js?v=194","./js/quote-sections.js":"/js/quote-sections.js?v=194","/js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","./js/rdv-reminder-init.js":"/js/rdv-reminder-init.js?v=194","/js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","./js/rdv-reminder-service.js":"/js/rdv-reminder-service.js?v=194","/js/register-sw.js":"/js/register-sw.js?v=194","./js/register-sw.js":"/js/register-sw.js?v=194","/js/renta-demo.js":"/js/renta-demo.js?v=194","./js/renta-demo.js":"/js/renta-demo.js?v=194","/js/signature-pad.js":"/js/signature-pad.js?v=194","./js/signature-pad.js":"/js/signature-pad.js?v=194","/js/simulation-metre.js":"/js/simulation-metre.js?v=194","./js/simulation-metre.js":"/js/simulation-metre.js?v=194","/js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","./js/site-publisher.defaults.js":"/js/site-publisher.defaults.js?v=194","/js/site-publisher.js":"/js/site-publisher.js?v=194","./js/site-publisher.js":"/js/site-publisher.js?v=194","/js/site-services.js":"/js/site-services.js?v=194","./js/site-services.js":"/js/site-services.js?v=194","/js/statistiques.js":"/js/statistiques.js?v=194","./js/statistiques.js":"/js/statistiques.js?v=194","/js/storage-guard.js":"/js/storage-guard.js?v=194","./js/storage-guard.js":"/js/storage-guard.js?v=194","/js/storage-repair.js":"/js/storage-repair.js?v=194","./js/storage-repair.js":"/js/storage-repair.js?v=194","/js/storage.js":"/js/storage.js?v=194","./js/storage.js":"/js/storage.js?v=194","/js/subscription.js":"/js/subscription.js?v=194","./js/subscription.js":"/js/subscription.js?v=194","/js/support-store.js":"/js/support-store.js?v=194","./js/support-store.js":"/js/support-store.js?v=194","/js/support.js":"/js/support.js?v=194","./js/support.js":"/js/support.js?v=194","/js/tarifs.js":"/js/tarifs.js?v=194","./js/tarifs.js":"/js/tarifs.js?v=194","/js/testimonials-render.js":"/js/testimonials-render.js?v=194","./js/testimonials-render.js":"/js/testimonials-render.js?v=194","/js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","./js/testimonials-seed.js":"/js/testimonials-seed.js?v=194","/js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","./js/trade-catalog-extensions.js":"/js/trade-catalog-extensions.js?v=194","/js/travel-fees.js":"/js/travel-fees.js?v=194","./js/travel-fees.js":"/js/travel-fees.js?v=194","/js/trial.js":"/js/trial.js?v=194","./js/trial.js":"/js/trial.js?v=194","/js/utils.js":"/js/utils.js?v=194","./js/utils.js":"/js/utils.js?v=194"},"scopes":{"/js/locales/":{"./app-ui.js":"./app-ui.js?v=194","./catalog-meta.js":"./catalog-meta.js?v=194","./landing-content.js":"./landing-content.js?v=194","./messages.js":"./messages.js?v=194"},"/js/":{"./acces-demo.js":"./acces-demo.js?v=194","./address-format.js":"./address-format.js?v=194","./ai-assistant.js":"./ai-assistant.js?v=194","./app-config.js":"./app-config.js?v=194","./app-security.js":"./app-security.js?v=194","./app-version-guard.js":"./app-version-guard.js?v=194","./app-viewport.js":"./app-viewport.js?v=194","./assistant-knowledge.js":"./assistant-knowledge.js?v=194","./auth-otp-ui.js":"./auth-otp-ui.js?v=194","./auth.js":"./auth.js?v=194","./auto-image-fetch.js":"./auto-image-fetch.js?v=194","./avis-form.js":"./avis-form.js?v=194","./avis-gestion.js":"./avis-gestion.js?v=194","./back-nav.js":"./back-nav.js?v=194","./batiprix-catalog.js":"./batiprix-catalog.js?v=194","./bibliotheque.js":"./bibliotheque.js?v=194","./brand.js":"./brand.js?v=194","./calculator.js":"./calculator.js?v=194","./campagnes.js":"./campagnes.js?v=194","./catalog-i18n.js":"./catalog-i18n.js?v=194","./chantier-detail.js":"./chantier-detail.js?v=194","./chantier-hub.js":"./chantier-hub.js?v=194","./chantiers.js":"./chantiers.js?v=194","./client-quote-visibility.js":"./client-quote-visibility.js?v=194","./clients.js":"./clients.js?v=194","./commercial-store.js":"./commercial-store.js?v=194","./commercial-sync.js":"./commercial-sync.js?v=194","./compta-engine.js":"./compta-engine.js?v=194","./compta-fec-export.js":"./compta-fec-export.js?v=194","./compta-imputation.js":"./compta-imputation.js?v=194","./compta-store.js":"./compta-store.js?v=194","./comptabilite.js":"./comptabilite.js?v=194","./country-config.js":"./country-config.js?v=194","./currency-format.js":"./currency-format.js?v=194","./dashboard.js":"./dashboard.js?v=194","./data.js":"./data.js?v=194","./demo-seed.js":"./demo-seed.js?v=194","./devis-draft-store.js":"./devis-draft-store.js?v=194","./devis-draft.js":"./devis-draft.js?v=194","./devis-fee-templates.js":"./devis-fee-templates.js?v=194","./devis-line-types.js":"./devis-line-types.js?v=194","./devis-lines.js":"./devis-lines.js?v=194","./devis-payments.js":"./devis-payments.js?v=194","./devis-table-fit.js":"./devis-table-fit.js?v=194","./devis.js":"./devis.js?v=194","./diagnostic-report.js":"./diagnostic-report.js?v=194","./difficulty-coefficients-store.js":"./difficulty-coefficients-store.js?v=194","./difficulty-settings.js":"./difficulty-settings.js?v=194","./email-verification.js":"./email-verification.js?v=194","./employe-historique.js":"./employe-historique.js?v=194","./employe-index.js":"./employe-index.js?v=194","./employe-metre.js":"./employe-metre.js?v=194","./employe-nav.js":"./employe-nav.js?v=194","./employe-security.js":"./employe-security.js?v=194","./employee-access.js":"./employee-access.js?v=194","./employee-auth.js":"./employee-auth.js?v=194","./employes.js":"./employes.js?v=194","./i18n.js":"./i18n.js?v=194","./installation-difficulty.js":"./installation-difficulty.js?v=194","./landing-faq-i18n.js":"./landing-faq-i18n.js?v=194","./landing-features.js":"./landing-features.js?v=194","./landing-money.js":"./landing-money.js?v=194","./landing-nav.js":"./landing-nav.js?v=194","./legal-content.js":"./legal-content.js?v=194","./legal-footer.js":"./legal-footer.js?v=194","./legal-page.js":"./legal-page.js?v=194","./leroy-merlin.js":"./leroy-merlin.js?v=194","./market.js":"./market.js?v=194","./metre-calculator.js":"./metre-calculator.js?v=194","./metre-constants.js":"./metre-constants.js?v=194","./metre-templates.js":"./metre-templates.js?v=194","./metre-validation.js":"./metre-validation.js?v=194","./mobile-bottom-nav.js":"./mobile-bottom-nav.js?v=194","./mobile-env.js":"./mobile-env.js?v=194","./module-base.js":"./module-base.js?v=194","./module-import.js":"./module-import.js?v=194","./nav-app.js":"./nav-app.js?v=194","./nav-menu-bootstrap.js":"./nav-menu-bootstrap.js?v=194","./nav-prefs-html.js":"./nav-prefs-html.js?v=194","./payment-link-service.js":"./payment-link-service.js?v=194","./payment-link.codec.js":"./payment-link.codec.js?v=194","./payment-page.js":"./payment-page.js?v=194","./payment-plan.js":"./payment-plan.js?v=194","./payment-store.js":"./payment-store.js?v=194","./pdf-devis.js":"./pdf-devis.js?v=194","./planning-calendar.js":"./planning-calendar.js?v=194","./planning-store.js":"./planning-store.js?v=194","./planning.js":"./planning.js?v=194","./prestation-images.js":"./prestation-images.js?v=194","./prestation-search.js":"./prestation-search.js?v=194","./prestation-svg-thumbs.js":"./prestation-svg-thumbs.js?v=194","./prestations-catalog.js":"./prestations-catalog.js?v=194","./prestations-import.js":"./prestations-import.js?v=194","./profil.js":"./profil.js?v=194","./profile-completeness.js":"./profile-completeness.js?v=194","./pwa-bootstrap.js":"./pwa-bootstrap.js?v=194","./pwa-install.js":"./pwa-install.js?v=194","./quick-test.js":"./quick-test.js?v=194","./quote-pricing.js":"./quote-pricing.js?v=194","./quote-sections.js":"./quote-sections.js?v=194","./rdv-reminder-init.js":"./rdv-reminder-init.js?v=194","./rdv-reminder-service.js":"./rdv-reminder-service.js?v=194","./register-sw.js":"./register-sw.js?v=194","./renta-demo.js":"./renta-demo.js?v=194","./signature-pad.js":"./signature-pad.js?v=194","./simulation-metre.js":"./simulation-metre.js?v=194","./site-publisher.defaults.js":"./site-publisher.defaults.js?v=194","./site-publisher.js":"./site-publisher.js?v=194","./site-services.js":"./site-services.js?v=194","./statistiques.js":"./statistiques.js?v=194","./storage-guard.js":"./storage-guard.js?v=194","./storage-repair.js":"./storage-repair.js?v=194","./storage.js":"./storage.js?v=194","./subscription.js":"./subscription.js?v=194","./support-store.js":"./support-store.js?v=194","./support.js":"./support.js?v=194","./tarifs.js":"./tarifs.js?v=194","./testimonials-render.js":"./testimonials-render.js?v=194","./testimonials-seed.js":"./testimonials-seed.js?v=194","./trade-catalog-extensions.js":"./trade-catalog-extensions.js?v=194","./travel-fees.js":"./travel-fees.js?v=194","./trial.js":"./trial.js?v=194","./utils.js":"./utils.js?v=194","./version.js":"./version.js?v=194"}}}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Exxon-bat — URSSAF, charges et impôts déjà calculés sur chaque devis. Voyez le bénéfice réel dans votre poche. CRM, paiements & planning. Dès 19,90 € HT/mois." data-i18n-content="meta.description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta name="theme-color" content="#6665dd" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Exxon-bat : devis rentables, charges incluses, bénéfice dans votre poche</title>
+    <link rel="stylesheet" href="css/base.css?v=194" />
+    <link rel="stylesheet" href="css/payments.css?v=194" />
+    <link rel="stylesheet" href="css/landing.css?v=194" />
+    <link rel="stylesheet" href="css/lang-switcher.css?v=194" />
+  </head>
+  <body class="landing" data-page-title-key="meta.title">
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="index.html" class="brand">
+          <div class="brand__logo" data-brand-logo aria-hidden="true"></div>
+          <div class="brand__text">
+            <span class="brand__name">Exxon-bat</span>
+            <span class="brand__tag" data-i18n="brand.tag">Artisans & entreprises BTP</span>
+          </div>
+        </a>
+        <div class="nav__right">
+          <div class="nav__auth">
+            <a href="#pourquoi-exxon-bat" class="btn btn--ghost" data-i18n="nav.why">Pourquoi Exxon-bat</a>
+            <a href="confidentialite.html#principe" class="btn btn--ghost nav__engagement" data-i18n="nav.engagement">Notre engagement</a>
+            <a href="tarifs.html" class="btn btn--ghost" data-i18n="nav.pricing">Tarifs</a>
+            <a href="connexion.html" class="btn btn--ghost" data-i18n="nav.login">Connexion</a>
+            <a href="inscription.html" class="btn btn--primary" data-i18n="nav.signup">Essai gratuit</a>
+          </div>
+          <div class="nav-prefs" aria-label="Préférences">
+            <div class="lang-switcher">
+              <label class="lang-switcher__label" for="lang-select" data-i18n="lang.label">Langue</label>
+              <select id="lang-select" class="lang-switcher__select pref-switcher__select" aria-label="Langue">
+                <option value="fr">🇫🇷 Français</option>
+                <option value="en">🇬🇧 English</option>
+                <option value="pt">🇵🇹 Português</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="es">🇪🇸 Español</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero — photo en premier -->
+    <section class="hero hero--clean">
+      <div class="container hero__grid hero__grid--clean">
+        <div class="hero__visual hero__visual--clean">
+          <figure class="hero__photo">
+            <img
+              src="https://images.unsplash.com/photo-1742112125635-6f8201c6ee3f?w=900&q=85"
+              alt="Deux artisans se tapent dans la main sur un chantier"
+              fetchpriority="high"
+              width="900"
+              height="560"
+            />
+          </figure>
+          <div class="hero__highlights" aria-label="Résultats moyens">
+            <div class="hero__highlight">
+              <strong>+40 %</strong>
+              <span>de marge en moyenne</span>
+            </div>
+            <div class="hero__highlight hero__highlight--accent">
+              <strong data-landing-avg-extra>+471 €</strong>
+              <span>récupérés par devis</span>
+            </div>
+            <div class="hero__highlight">
+              <strong>2 400+</strong>
+              <span>artisans actifs</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Le logiciel simple pour des devis rentables dans le bâtiment.
+          </h1>
+          <p class="hero__subtitle hero__subtitle--clean">
+            Chiffrez, voyez votre bénéfice réel, puis envoyez. URSSAF, matériel et impôts déjà calculés sur chaque devis.
+          </p>
+          <ul class="hero__checks">
+            <li>Créez vos devis PDF avec marge nette visible</li>
+            <li>Pilotez commercial, paiements & planning</li>
+            <li>Verdict rentabilité avant chaque signature</li>
+            <li>Intuitif · 100 % compatible mobile & tablette</li>
+          </ul>
+          <div class="hero__rating">
+            <span class="hero__rating-stars">★★★★★</span>
+            <span>Noté <strong>4,9/5</strong>, utilisé sur chantier chaque jour</span>
+          </div>
+          <div class="hero__actions hero__actions--clean">
+            <a href="inscription.html" class="btn btn--primary btn--lg">Essayer gratuitement</a>
+            <a href="connexion.html?next=devis.html" class="btn btn--ghost btn--lg">Voir un devis en démo</a>
+          </div>
+          <p class="hero__cta-note hero__cta-note--clean">Sans carte bancaire · Prise en main en 3 min</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bandeau photos terrain — visible dès l'arrivée -->
+    <section class="photo-strip photo-strip--hero" aria-label="Artisans du BTP sur chantier">
+      <div class="photo-strip__track">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Artisan BTP souriante au travail" loading="eager" />
+        <img src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?w=500&q=80" alt="Plombier en rénovation salle de bain" loading="eager" />
+        <img src="https://images.unsplash.com/photo-1742900280861-32bed068938b?w=500&q=80" alt="Peintre sur échelle" loading="eager" />
+        <img src="https://images.unsplash.com/photo-1768321903410-54961e343b71?w=500&q=80" alt="Plaquiste — pose de cloisons" loading="eager" />
+        <img src="https://images.unsplash.com/photo-1731185752376-a4cf3e8556fa?w=500&q=80" alt="Carreleur en pose de sol" loading="eager" />
+        <img src="https://images.unsplash.com/photo-1679797850019-3d0d8659a695?w=500&q=80" alt="Menuisier en atelier" loading="eager" />
+      </div>
+    </section>
+
+    <!-- Métiers — bandeau Batappli -->
+    <section class="metiers-marquee" aria-hidden="true">
+      <div class="metiers-marquee__track">
+        <span>Électricien</span><span>Plombier</span><span>Peintre</span><span>Plaquiste</span><span>Menuisier</span><span>Carreleur</span><span>Couvreur</span><span>Maçon</span><span>Chauffagiste</span><span>Multi-services</span>
+        <span>Électricien</span><span>Plombier</span><span>Peintre</span><span>Plaquiste</span><span>Menuisier</span><span>Carreleur</span><span>Couvreur</span><span>Maçon</span><span>Chauffagiste</span><span>Multi-services</span>
+      </div>
+    </section>
+
+    <!-- Chiffres clés -->
+    <section class="stats-band stats-band--clean">
+      <div class="container">
+        <div class="stats-band__grid stats-band__grid--clean">
+          <div class="stats-band__item">
+            <strong>+40 %</strong>
+            <span>de marge moyenne</span>
+          </div>
+          <div class="stats-band__item stats-band__item--highlight">
+            <strong id="stats-extra-devis">+471 €</strong>
+            <span>récupérés par devis</span>
+          </div>
+          <div class="stats-band__item">
+            <strong>2 400+</strong>
+            <span>artisans actifs</span>
+          </div>
+          <div class="stats-band__item">
+            <strong>4,9/5</strong>
+            <span>note utilisateurs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi Exxon-bat -->
+    <section class="value-band why-exxon" id="pourquoi-exxon-bat">
+      <div class="container">
+        <div class="section__head section__head--center why-exxon__head">
+          <p class="section__eyebrow" data-i18n="why.eyebrow">Pourquoi Exxon-bat</p>
+          <h2 data-i18n="why.title">Le logiciel BTP pensé pour garder le bénéfice dans votre entreprise</h2>
+          <p class="section__lead" data-i18n="why.sub">Pas un simple outil de devis : un calculateur de rentabilité, un CRM et un planning réunis pour les artisans, auto-entrepreneurs et TPE du bâtiment en France.</p>
+        </div>
+        <div class="why-exxon__goal">
+          <p class="why-exxon__goal-label" data-i18n="why.goal.label">L'objectif de ce site</p>
+          <p class="why-exxon__goal-text" data-i18n="why.goal.text" data-i18n-html="true">
+            Exxon-bat existe pour une raison simple : <strong>empêcher les artisans du BTP de signer des devis à perte</strong>.
+            Ce site vous présente un logiciel qui calcule URSSAF, impôts, matériel et charges sur chaque devis — <em>avant</em> l'envoi au client.
+            Vous voyez votre bénéfice net réel, vous ajustez votre prix si besoin, et vous gardez le contrôle de votre trésorerie sans Excel ni approximations.
+          </p>
+        </div>
+        <div class="value-band__grid why-exxon__grid">
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🇫🇷</div>
+            <h3 data-i18n="why.c1.title">100 % BTP français</h3>
+            <p data-i18n="why.c1.desc">URSSAF, TVA, statuts artisan et auto-entrepreneur — les calculs correspondent à votre réalité, pas à un logiciel généraliste.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">📊</div>
+            <h3 data-i18n="why.c2.title">Rentabilité avant envoi</h3>
+            <p data-i18n="why.c2.desc">Verdict vert, orange ou rouge sur chaque devis. Prix minimum conseillé, charges et impôts déjà déduits — vous ne signez plus à perte.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">🧰</div>
+            <h3 data-i18n="why.c3.title">Tout-en-un, sans Excel</h3>
+            <p data-i18n="why.c3.desc">Devis, factures, commercial, paiements, planning chantier et compta — une seule app au lieu de cinq outils éparpillés.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">📱</div>
+            <h3 data-i18n="why.c4.title">Simple sur chantier</h3>
+            <p data-i18n="why.c4.desc">Mobile, tablette, mode hors ligne. Chiffrez sur place, imprimez un PDF pro, repartez travailler — pas besoin de retourner au bureau.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">📚</div>
+            <h3 data-i18n="why.c5.title">Bibliothèque & Batiprix</h3>
+            <p data-i18n="why.c5.desc">Catalogues métier intégrés : électricité, plomberie, peinture… Ajoutez vos ouvrages en quelques clics, sans ressaisir.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-card__icon" aria-hidden="true">✓</div>
+            <h3 data-i18n="why.c6.title">Essai gratuit 30 jours</h3>
+            <p data-i18n="why.c6.desc">Testez toutes les fonctionnalités Pro sans carte bancaire. Sans engagement — vous décidez après avoir vu votre vrai bénéfice.</p>
+          </article>
+        </div>
+        <p class="section-cta why-exxon__cta">
+          <a href="inscription.html" class="btn btn--primary btn--lg" data-i18n="why.cta">Essayer gratuitement</a>
+          <a href="tarifs.html" class="btn btn--ghost btn--lg" data-i18n="nav.pricing">Voir les tarifs</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Aperçu application -->
+    <section class="section app-preview" id="apercu">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow">Aperçu</p>
+          <h2>Voyez votre bénéfice réel avant d'envoyer le devis</h2>
+          <p class="section__lead">Verdict vert, orange ou rouge. Charges URSSAF, matériel et impôts déjà déduits.</p>
+        </div>
+        <div class="product-mock product-mock--preview" aria-hidden="true">
+          <div class="product-mock__chrome">
+            <span></span><span></span><span></span>
+            <div class="product-mock__url">app.exxon-bat.com</div>
+          </div>
+          <div class="product-mock__layout">
+            <aside class="product-mock__nav">
+              <span class="is-active">Commercial</span>
+              <span>Devis</span>
+              <span>Planning</span>
+              <span>Paiements</span>
+            </aside>
+            <div class="product-mock__main">
+              <div class="product-mock__kpis">
+                <div class="product-mock__kpi--ok"><small>Bénéfice net estimé</small><strong>+ 486 €</strong></div>
+                <div><small>URSSAF déduite</small><strong>− 412 €</strong></div>
+                <div><small>Prix min. conseillé</small><strong>3 350 €</strong></div>
+              </div>
+              <div class="product-mock__verdict product-mock__verdict--warn">
+                ⚠ Devis à 2 800 € : sous le seuil rentable. Ajustez avant envoi.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="app-preview__cta">
+          <a href="inscription.html" class="btn btn--primary btn--lg">Essayer sur mon prochain devis</a>
+          <a href="#argent-devis" class="btn btn--ghost btn--lg">Combien en euros ?</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission rentabilité -->
+    <section class="profit-mission" id="mission">
+      <div class="container">
+        <div class="profit-mission__grid">
+          <div class="profit-mission__lead">
+            <p class="section__eyebrow section__eyebrow--light" data-i18n="mission.eyebrow">Notre promesse</p>
+            <h2 data-i18n="mission.title">Faciliter la vie des entrepreneurs — le bénéfice reste dans la société, pas dans l'incertitude</h2>
+            <p class="profit-mission__text" data-i18n="mission.text" data-i18n-html="true">
+              Trop d'artisans travaillent dur… pour rien garder. Devis trop bas, matériel sous-estimé, charges sociales oubliées, impôts surprise en fin d'année. <strong>Exxon-bat a été conçu pour ça</strong> : vous simplifier le quotidien et garantir que chaque chantier vous laisse un vrai bénéfice — celui qui reste dans votre poche et dans votre trésorerie.
+            </p>
+            <a href="connexion.html?next=devis.html" class="btn btn--white btn--lg" data-i18n="mission.cta">Tester sur mon prochain devis</a>
+          </div>
+          <div class="profit-mission__aside">
+            <h3 data-i18n="mission.aside.title">Ce qui est déjà pris en compte — avant d'envoyer le devis</h3>
+            <ul class="profit-mission__list">
+              <li><span>🏛️</span><div><strong data-i18n="mission.item1.title">Cotisations URSSAF</strong><p data-i18n="mission.item1.desc">Selon votre activité : BIC, BNC, CIPAV, auto-entrepreneur…</p></div></li>
+              <li><span>📊</span><div><strong data-i18n="mission.item2.title">Impôts & versement libératoire</strong><p data-i18n="mission.item2.desc">Estimation intégrée — vous anticipez, vous ne subissez plus.</p></div></li>
+              <li><span>👷</span><div><strong data-i18n="mission.item3.title">Main-d'œuvre & masse salariale</strong><p data-i18n="mission.item3.desc">TPE : salaires chargés déduits du calcul de rentabilité.</p></div></li>
+              <li><span>🧱</span><div><strong data-i18n="mission.item4.title">Matériel & pertes</strong><p data-i18n="mission.item4.desc">Coût d'achat, revente, coefficient minimum — fini le matériel offert par mégarde.</p></div></li>
+              <li><span>🏢</span><div><strong data-i18n="mission.item5.title">Charges fixes & frais de structure</strong><p data-i18n="mission.item5.desc">Loyer, véhicule, assurance — répartis sur votre activité.</p></div></li>
+              <li><span>💶</span><div><strong data-i18n="mission.item6.title">Bénéfice net dans votre poche</strong><p data-i18n="mission.item6.desc">Le montant affiché, c'est ce qui reste après tout le reste.</p></div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="profit-mission__anti">
+          <article>
+            <strong data-i18n="mission.anti1.title">✕ Devis en dessous du prix réel</strong>
+            <p data-i18n="mission.anti1.desc">Vous signez à 2 800 € en pensant gagner 800 €. En réalité : 186 €. Exxon-bat vous alerte avant l'envoi.</p>
+          </article>
+          <article>
+            <strong data-i18n="mission.anti2.title">✕ Matériel sous-facturé</strong>
+            <p data-i18n="mission.anti2.desc">Coefficient matériel minimum intégré — vous ne perdez plus sur la fourniture.</p>
+          </article>
+          <article>
+            <strong data-i18n="mission.anti3.title">✕ Stress URSSAF & impôts</strong>
+            <p data-i18n="mission.anti3.desc">Les charges ne sont plus une surprise : elles sont dans le calcul, devis après devis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confiance visuelle — visages & témoignages -->
+    <section class="trust-people" aria-label="Artisans utilisateurs">
+      <div class="container">
+        <div class="trust-people__head">
+          <p class="section__eyebrow">Sur le terrain</p>
+          <h2>Des artisans comme vous, qui ont repris la main sur leurs marges</h2>
+        </div>
+        <div class="trust-people__grid">
+          <article class="trust-people__card">
+            <img
+              src="https://images.unsplash.com/photo-1749532125405-70950966b0e5?w=600&h=400&fit=crop&q=80"
+              alt="Thomas, plombier sur chantier"
+              loading="lazy"
+            />
+            <blockquote>« Avant j'envoyais à l'instinct. Maintenant je vois combien il me reste vraiment, souvent +400 € de plus. »</blockquote>
+            <footer><strong>Thomas</strong> · Plombier, Lyon</footer>
+          </article>
+          <article class="trust-people__card">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop&q=80"
+              alt="Sophie, gérante TPE peinture"
+              loading="lazy"
+            />
+            <blockquote>« Mes équipes chiffrent en 3 minutes. Le client voit un devis pro, moi je vois si ça vaut le coup. »</blockquote>
+            <footer><strong>Sophie</strong> · Peinture &amp; décoration, Nantes</footer>
+          </article>
+          <article class="trust-people__card">
+            <img
+              src="https://images.unsplash.com/photo-1679797850019-3d0d8659a695?w=600&h=400&fit=crop&q=80"
+              alt="Karim, menuisier en atelier"
+              loading="lazy"
+            />
+            <blockquote>« Fini les devis où je perdais sur le matériel. Le prix minimum conseillé m'a sauvé deux chantiers. »</blockquote>
+            <footer><strong>Karim</strong> · Menuiserie, Toulouse</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Argent devis par devis -->
+    <section class="money-surprise" id="argent-devis">
+      <div class="container">
+        <div class="money-surprise__head">
+          <p class="section__eyebrow">En euros, pas en pourcentages</p>
+          <h2>Devis par devis : combien vous laissez sur la table, et combien vous récupérez</h2>
+          <p class="money-surprise__lead">
+            Le <strong>+40 %</strong>, c'est la moyenne. Voici ce que ça représente <strong>en argent réel</strong> sur des chantiers du quotidien, après URSSAF, matériel, impôts et charges fixes.
+          </p>
+        </div>
+
+        <div class="devis-money-grid" id="devis-money-grid"></div>
+
+        <div class="money-calculator">
+          <div class="money-calculator__intro">
+            <h3>Et chez vous, sur une année ?</h3>
+            <p>Ajustez le nombre de devis que vous signez chaque mois. La projection se met à jour instantanément.</p>
+          </div>
+          <div class="money-calculator__control">
+            <label for="devis-per-month">
+              Devis signés par mois
+              <strong id="devis-per-month-value">8</strong>
+            </label>
+            <input type="range" id="devis-per-month" min="2" max="25" step="1" value="8" />
+            <div class="money-calculator__range-labels">
+              <span>2 / mois</span>
+              <span>25 / mois</span>
+            </div>
+          </div>
+          <div class="money-calculator__results">
+            <article class="money-calculator__result">
+              <span>Marge récupérée chaque mois</span>
+              <strong id="money-monthly">+ 3 768 €</strong>
+              <small>En corrigeant vos prix avant signature</small>
+            </article>
+            <article class="money-calculator__result money-calculator__result--hero">
+              <span>Sur 12 mois, dans votre poche</span>
+              <strong id="money-yearly">+ 45 216 €</strong>
+              <small>Illustration basée sur nos exemples métier. Votre profil fera la différence exacte.</small>
+            </article>
+          </div>
+          <p class="money-calculator__cta">
+            <a href="connexion.html?next=devis.html" class="btn btn--primary btn--lg">Calculer mon bénéfice sur mon prochain devis</a>
+            <a href="connexion.html?next=devis.html" class="btn btn--ghost btn--lg">Voir la démo en direct</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours plateforme -->
+    <section class="section platform-flow" id="plateforme">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow" data-i18n="platform.eyebrow">Comment ça marche</p>
+          <h2 data-i18n="platform.title">Du premier contact au chantier payé, sans Excel ni post-it</h2>
+          <p data-i18n="platform.sub">Chaque étape met à jour la suivante. Vous ne cherchez plus : vous agissez.</p>
+        </div>
+        <div class="platform-flow__steps">
+          <article class="platform-flow__step">
+            <div class="platform-flow__icon">📋</div>
+            <h3 data-i18n="platform.s1.title">1. Devis chiffré</h3>
+            <p data-i18n="platform.s1.desc">Bibliothèque BTP, Batiprix, coefficients de pose (apparent / encastré). Verdict rentabilité avant impression.</p>
+          </article>
+          <article class="platform-flow__step">
+            <div class="platform-flow__icon">👥</div>
+            <h3 data-i18n="platform.s2.title">2. Pipeline commercial</h3>
+            <p data-i18n="platform.s2.desc">Devis imprimé → pipeline auto. Validé, en attente, RDV planifié — tout est visible en un coup d'œil.</p>
+          </article>
+          <article class="platform-flow__step">
+            <div class="platform-flow__icon">💳</div>
+            <h3 data-i18n="platform.s3.title">3. Paiement client</h3>
+            <p data-i18n="platform.s3.desc">Lien sécurisé par e-mail : IBAN, référence virement, acompte ou solde. Encaissement suivi en temps réel.</p>
+          </article>
+          <article class="platform-flow__step">
+            <div class="platform-flow__icon">📅</div>
+            <h3 data-i18n="platform.s4.title">4. Planning & RDV</h3>
+            <p data-i18n="platform.s4.desc">Agenda unifié, charge semaine, créneaux libres. Rappel e-mail & notification la veille du rendez-vous.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain points — photos & sourires (Batappli) -->
+    <section class="pain-stories" id="problemes">
+      <div class="container">
+        <div class="pain-stories__head">
+          <p class="section__eyebrow">Vos défis au quotidien</p>
+          <h2>Moins de stress administratif, plus de temps sur vos chantiers</h2>
+          <p>Devis, encaissements, planning, conformité : cliquez sur une carte pour découvrir comment Exxon-bat vous simplifie la vie.</p>
+        </div>
+        <div class="pain-stories__grid" id="pain-stories-root"></div>
+      </div>
+    </section>
+
+    <!-- Modules — alternance pro (Costructor) -->
+    <section class="feat-showcase section--alt" id="fonctionnalites">
+      <div class="container">
+        <div class="feat-showcase__head">
+          <p class="section__eyebrow">Fonctionnalités 2026</p>
+          <h2>Tout ce qu'une TPE BTP performante attend, déjà inclus</h2>
+          <p>Devis, rentabilité, commercial, planning et compta. Chaque module a sa propre accroche : cliquez pour voir le détail.</p>
+        </div>
+        <div class="feat-showcase__list" id="features-showcase-root"></div>
+        <p class="feat-showcase__cta">
+          <a href="inscription.html" class="btn btn--primary btn--lg">Essayer gratuitement 30 jours</a>
+          <a href="connexion.html?next=devis.html" class="btn btn--ghost btn--lg">Voir la démo en direct</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Rentabilité -->
+    <section class="section section--alt" id="rentabilite">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow" data-i18n="renta.eyebrow">Calculateur Pro</p>
+          <h2 data-i18n="renta.title">Ne vous souciez plus de l'URSSAF en fin de mois — anticipez sur chaque devis</h2>
+          <p data-i18n="renta.sub" data-i18n-html="true">Exxon-bat calcule pour vous. Vous configurez votre profil une fois (statut, charges, rémunération cible). Ensuite, à chaque devis, l'application fait le travail : cotisations, impôts, coûts directs, frais de structure. <strong>Le chiffre affiché, c'est votre bénéfice net estimé</strong> — celui qui doit rester dans l'entreprise.</p>
+        </div>
+        <div class="renta-steps">
+          <div class="renta-step">
+            <div class="renta-step__num">1</div>
+            <h3>Votre profil entreprise</h3>
+            <p>Statut juridique, URSSAF, impôts, charges fixes, salaire visé ou masse salariale TPE.</p>
+          </div>
+          <div class="renta-step">
+            <div class="renta-step__num">2</div>
+            <h3>Votre devis en 30 secondes</h3>
+            <p>Prix client, heures, matériel achat/revente. L'app intègre coefficients de pose et Batiprix.</p>
+          </div>
+          <div class="renta-step">
+            <div class="renta-step__num">3</div>
+            <h3>Verdict & prix minimum</h3>
+            <p>Rentable, limite ou déficitaire. Prix plancher conseillé pour que le bénéfice reste dans votre poche.</p>
+          </div>
+        </div>
+
+        <div class="renta-demo">
+          <div class="renta-demo__bar">
+            <button type="button" class="is-active" data-demo="artisan">Artisan seul</button>
+            <button type="button" data-demo="auto">Auto-entrepreneur</button>
+            <button type="button" data-demo="tpe">TPE avec salariés</button>
+          </div>
+          <div class="renta-demo__body">
+            <div class="renta-demo__input">
+              <p style="margin:0 0 16px;font-weight:600;color:var(--navy)">Exemple : Peintre en bâtiment</p>
+              <p style="margin:0 0 8px;font-size:0.9rem;color:var(--text-muted)">Prix proposé au client : <strong style="color:var(--text)">2 800 €</strong></p>
+              <p style="margin:0 0 8px;font-size:0.9rem;color:var(--text-muted)">Temps estimé : <strong style="color:var(--text)">5 jours</strong></p>
+              <p style="margin:0;font-size:0.9rem;color:var(--text-muted)">Peinture + préparation : <strong style="color:var(--text)">420 €</strong></p>
+            </div>
+            <div class="renta-demo__output">
+              <div class="renta-demo__verdict">
+                <span style="font-size:1.3rem">⚠</span>
+                <div>
+                  <strong style="color:var(--warning)">Limite : prix trop bas</strong>
+                  <p style="margin:4px 0 0;font-size:0.82rem;color:var(--text-muted)">Marge nette : 186 € · Prix min. conseillé : <strong>3 350 €</strong></p>
+                </div>
+              </div>
+              <p style="margin:0;font-size:0.85rem;color:var(--text-muted)">Sans Exxon-bat, vous auriez signé en pensant gagner 800 €. Avec le recalcul : <strong>seulement 186 €</strong> dans votre poche, ou une perte si vous aviez mal chiffré le matériel.</p>
+            </div>
+          </div>
+        </div>
+        <p class="renta-disclaimer" data-i18n="renta.disclaimer">Calculs indicatifs basés sur votre profil — validez les montants fiscaux avec votre comptable. L'objectif : vous éviter les mauvaises surprises, pas remplacer votre expert-comptable.</p>
+        <p class="section-cta">
+          <a href="connexion.html?next=devis.html" class="btn btn--primary btn--lg" data-i18n="renta.cta">Calculer mon bénéfice réel — essai gratuit</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Planning & chantiers -->
+    <section class="section" id="chantiers">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow" data-i18n="plan.eyebrow">Business · Planning</p>
+          <h2 data-i18n="plan.title">Planning, disponibilités & Gantt — votre semaine en un regard</h2>
+          <p data-i18n="plan.sub">Agenda unifié (RDV commercial + interventions + tâches chantier). Score de charge, créneaux libres et rappels automatiques la veille.</p>
+        </div>
+
+        <div class="planning-showcase">
+          <div class="planning-showcase__week">
+            <div class="planning-showcase__day"><span>Lun</span><strong>9</strong><em>45 %</em></div>
+            <div class="planning-showcase__day is-busy"><span>Mar</span><strong>10</strong><em>82 %</em><i>RDV 10h</i></div>
+            <div class="planning-showcase__day"><span>Mer</span><strong>11</strong><em>30 %</em></div>
+            <div class="planning-showcase__day is-free"><span>Jeu</span><strong>12</strong><em>Libre 14h</em></div>
+            <div class="planning-showcase__day"><span>Ven</span><strong>13</strong><em>60 %</em></div>
+          </div>
+          <ul class="planning-showcase__list">
+            <li data-i18n="plan.l1">📅 RDV commercial synchronisés automatiquement</li>
+            <li data-i18n="plan.l2">🔨 Interventions chantier → tâches Gantt</li>
+            <li data-i18n="plan.l3">✉️ Rappel e-mail + notification la veille</li>
+            <li data-i18n="plan.l4">📊 File « À planifier » : devis validés sans date</li>
+          </ul>
+        </div>
+
+        <div class="pains">
+          <article class="pain-card">
+            <div class="pain-card__emoji">📅</div>
+            <h3 data-i18n="plan.p1.title">Agenda & disponibilités</h3>
+            <p data-i18n="plan.p1.desc">Visualisez votre charge semaine et vos créneaux libres — planifiez en un clic.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__emoji">📊</div>
+            <h3 data-i18n="plan.p2.title">Gantt par chantier</h3>
+            <p data-i18n="plan.p2.desc">Tâches, chevauchements, retards — suivi d'avancement en temps réel.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__emoji">👷</div>
+            <h3 data-i18n="plan.p3.title">Métré terrain employé</h3>
+            <p data-i18n="plan.p3.desc">Espace salarié, code chantier, comparaison devis vs travaux réels.</p>
+          </article>
+        </div>
+        <p class="section-cta">
+          <a href="inscription.html?next=planning.html" class="btn btn--primary" data-i18n="plan.cta">Découvrir le planning</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Galerie terrain -->
+    <section class="section section--alt" id="terrain">
+      <div class="container">
+        <div class="section__head">
+          <h2>Un logiciel adapté à tous les artisans du BTP</h2>
+          <p>Second œuvre, rénovation, finitions : Exxon-bat s'adapte à votre métier.</p>
+        </div>
+        <div class="metiers-grid">
+          <article class="metier-card">
+            <strong>Électricien</strong>
+            <p>Créez des devis précis pour vos chantiers d'électricité. Vérifiez la rentabilité avant de signer.</p>
+          </article>
+          <article class="metier-card">
+            <strong>Plombier</strong>
+            <p>Devis détaillant toutes vos interventions, validés immédiatement auprès de vos clients.</p>
+          </article>
+          <article class="metier-card">
+            <strong>Peintre</strong>
+            <p>Remportez vos appels d'offre avec des devis précis, bien plus rapides. Surfaces, finitions, cotes…</p>
+          </article>
+          <article class="metier-card">
+            <strong>Plaquiste</strong>
+            <p>Chiffrez cloisons, doublages et finitions. Suivez l'avancement et la marge de chaque chantier.</p>
+          </article>
+          <article class="metier-card">
+            <strong>Menuisier</strong>
+            <p>Devis sur-mesure, en atelier ou chez le client. Rentabilité visible avant chaque envoi.</p>
+          </article>
+          <article class="metier-card">
+            <strong>Carreleur</strong>
+            <p>Gérez surfaces, métrés et acomptes en quelques clics. Devis pro depuis votre mobile.</p>
+          </article>
+        </div>
+        <div class="chantier-gallery">
+          <figure class="chantier-gallery__item chantier-gallery__item--wide">
+            <img
+              src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80"
+              alt="Électricien au travail sur un tableau"
+              loading="lazy"
+            />
+            <figcaption>Électricité</figcaption>
+          </figure>
+          <figure class="chantier-gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1676210134188-4c05dd172f89?w=600&q=80"
+              alt="Plombier sur réseau encastré"
+              loading="lazy"
+            />
+            <figcaption>Plomberie</figcaption>
+          </figure>
+          <figure class="chantier-gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1529722155810-17303d209942?w=600&q=80"
+              alt="Peintre en rénovation intérieure"
+              loading="lazy"
+            />
+            <figcaption>Peinture</figcaption>
+          </figure>
+          <figure class="chantier-gallery__item chantier-gallery__item--tall">
+            <img
+              src="https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?w=600&q=80"
+              alt="Techniciens clim sur toiture"
+              loading="lazy"
+            />
+            <figcaption>Climatisation</figcaption>
+          </figure>
+          <figure class="chantier-gallery__item">
+            <img
+              src="https://images.unsplash.com/photo-1751486403890-793880b12adb?w=600&q=80"
+              alt="Chantier de plâtrerie et finitions"
+              loading="lazy"
+            />
+            <figcaption>Plaquiste</figcaption>
+          </figure>
+          <figure class="chantier-gallery__item chantier-gallery__item--wide">
+            <img
+              src="https://images.unsplash.com/photo-1705579604902-eb832f58bf85?w=900&q=80"
+              alt="Technicien climatisation sur toiture"
+              loading="lazy"
+            />
+            <figcaption>Climatisation</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features with images -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="feature-row">
+          <div class="feature-row__content">
+            <h3>Optimisez votre facturation</h3>
+            <p>Soyez prêt pour la facturation électronique 2026. Générez des devis et factures professionnels en quelques clics.</p>
+            <ul class="feature-list">
+              <li>Devis PDF personnalisés au nom de votre entreprise</li>
+              <li>Suivi des paiements & relances (dès Pro · 79,90 €)</li>
+              <li>Calculateur de rentabilité intégré (dès Pro)</li>
+              <li>Compatible facturation électronique 2026</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--primary">Essai gratuit 30 jours</a>
+          </div>
+          <div class="feature-row__media">
+            <img src="https://images.unsplash.com/photo-1671681739893-e8d027788284?w=700&q=80" alt="Artisan peintre préparant un devis sur chantier" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="payments-feature">
+          <div class="payments-feature__intro">
+            <h3>Maîtrisez vos encaissements</h3>
+            <p>Ne laissez plus les impayés grignoter votre marge. Exxon-bat structure le suivi des règlements comme un vrai outil métier BTP.</p>
+          </div>
+          <div class="payments-tier-grid">
+            <article class="payments-tier payments-tier--entry">
+              <span class="payments-tier__label">Pour démarrer</span>
+              <h4>Devis & factures</h4>
+              <div class="payments-tier__price">
+                <strong>19,90 €</strong>
+                <span>HT/mois</span>
+              </div>
+              <p class="payments-tier__tagline">Devis simple, factures propres — sans complexité.</p>
+              <ul class="payments-tier__list">
+                <li>Devis & factures PDF au nom de votre entreprise</li>
+                <li>Modalités de paiement standard sur PDF</li>
+                <li>Historique des devis & mode hors ligne</li>
+              </ul>
+            </article>
+            <article class="payments-tier payments-tier--pro">
+              <span class="payments-tier__badge">Le plus populaire</span>
+              <h4>Pro</h4>
+              <div class="payments-tier__price">
+                <strong>79,90 €</strong>
+                <span>HT/mois</span>
+              </div>
+              <p class="payments-tier__tagline">L'offre sérieuse — rentabilité & encaissements.</p>
+              <ul class="payments-tier__list">
+                <li>Suivi paiements, acomptes & relances</li>
+                <li>Liens de paiement client (virement / acompte)</li>
+                <li>CRM commercial & pipeline synchronisé</li>
+                <li>Clients, stats & ouvrages Batiprix</li>
+              </ul>
+            </article>
+            <article class="payments-tier payments-tier--business">
+              <span class="payments-tier__label">Équipe & chantiers</span>
+              <h4>Business</h4>
+              <div class="payments-tier__price">
+                <strong>99,90 €</strong>
+                <span>HT/mois</span>
+              </div>
+              <p class="payments-tier__tagline">Tout Pro + pilotage terrain et équipe.</p>
+              <ul class="payments-tier__list">
+                <li>Tout Pro + calendrier & disponibilités</li>
+                <li>Gantt, métré terrain & rappels RDV</li>
+                <li>Espace employé & multi-utilisateurs</li>
+              </ul>
+            </article>
+          </div>
+          <div class="payments-feature__footer">
+            <a href="tarifs.html#pricing" class="btn btn--primary">Comparer les offres →</a>
+            <img
+              class="payments-feature__img"
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80"
+              alt="Artisan consultant le suivi des paiements sur tablette"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-row__content">
+            <h3>Puis-je l'utiliser sur mobile ?</h3>
+            <p>Oui, sur tous vos appareils. Exxon-bat est 100 % accessible en ligne avec une ergonomie adaptée aux mobiles, tablettes, PC et Mac.</p>
+            <ul class="feature-list">
+              <li>Créez vos devis directement depuis votre téléphone</li>
+              <li>Mode hors ligne sur chantier, sans réseau</li>
+              <li>Synchronisation automatique au retour du Wi-Fi</li>
+            </ul>
+          </div>
+          <div class="feature-row__media">
+            <img src="https://images.unsplash.com/photo-1518135714426-c18f5ffb6f4d?w=700&q=80" alt="Deux artisans se serrent la main après un chantier" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__head">
+          <h2>Accessible 100 % en ligne, sécurisé et conforme</h2>
+          <p>Vos devis et clients restent sur votre appareil. Nous n'y accédons pas à distance.</p>
+        </div>
+        <div class="dual-cards">
+          <article class="dual-card">
+            <div class="dual-card__icon">🔐</div>
+            <h3>Connexion sécurisée par e-mail</h3>
+            <p>Votre compte est lié à votre adresse e-mail. Vos clients et devis restent stockés localement sur votre appareil. Exxon-bat n'y accède pas. Chiffrement HTTPS.</p>
+            <div class="security-badges">
+              <span class="security-badge">HTTPS sécurisé</span>
+              <span class="security-badge">Données locales</span>
+              <span class="security-badge">RGPD</span>
+            </div>
+            <p style="margin-top:14px"><a href="confidentialite.html" class="btn btn--ghost btn--sm">Lire notre politique de confidentialité →</a></p>
+          </article>
+          <article class="dual-card">
+            <div class="dual-card__icon">📴</div>
+            <h3>Travaillez sans connexion</h3>
+            <p>Pas de réseau sur le terrain ? Pas de problème. Vos profils et analyses restent disponibles hors ligne sur votre appareil.</p>
+            <div class="security-badges">
+              <span class="security-badge">Mode hors ligne</span>
+              <span class="security-badge">PC & mobile</span>
+              <span class="security-badge">Sauvegarde auto</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Quelle offre choisir selon votre profil ?</h2>
+          <p>Devis simple, pilotage pro ou gestion d'équipe : 3 offres, un seul choix à faire.</p>
+        </div>
+        <div class="profiles-grid">
+          <div class="profile-card">
+            <div class="profile-card__icon profile-card__icon--pro">01</div>
+            <strong>Artisan seul</strong>
+            <span>Auto-entrepreneur ou indépendant : vous chiffrez seul</span>
+            <span class="profile-card__offer">→ Devis & factures · 19,90 €/mois</span>
+          </div>
+          <div class="profile-card profile-card--highlight">
+            <span class="profile-card__badge">Le plus populaire</span>
+            <div class="profile-card__icon profile-card__icon--pro">02</div>
+            <strong>En croissance</strong>
+            <span>Clients, stats, exports compta : vous structurez l'activité</span>
+            <span class="profile-card__offer">→ Offre Pro · 79,90 €/mois</span>
+          </div>
+          <div class="profile-card">
+            <div class="profile-card__icon profile-card__icon--pro">03</div>
+            <strong>TPE avec équipe</strong>
+            <span>Salariés, plusieurs chantiers, planning à coordonner</span>
+            <span class="profile-card__offer">→ Offre Business · 99,90 €/mois</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="temoignages">
+      <div class="container">
+        <div class="section__head">
+          <h2>Ils gèrent leur entreprise avec Exxon-bat</h2>
+          <p class="testimonials__rating" id="testimonials-rating">Découvrez pourquoi : <strong>4,9/5</strong> · Témoignages clients</p>
+        </div>
+        <div class="testimonials" id="testimonials-grid"></div>
+        <p class="section-cta" style="margin-top:32px">
+          <a href="avis.html" class="btn btn--ghost">Laisser votre avis →</a>
+          <span class="section-cta__note">Vous êtes client ? Votre avis sera publié après validation.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="faq.title">Questions fréquentes</h2>
+        </div>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- Pricing teaser -->
+    <section class="section section--alt" id="tarifs">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="pricing.title">Des formules adaptées à vos usages</h2>
+          <p data-i18n="pricing.sub">3 offres : devis simple à 19,90 €, pilotage sérieux dès 79,90 €.</p>
+        </div>
+        <div class="pricing-teaser">
+          <article class="pricing-teaser__card">
+            <h3>Devis & factures</h3>
+            <p class="pricing-teaser__price"><strong>19,90 €</strong><span>HT/mois</span></p>
+            <p class="pricing-teaser__daily">≈ 0,65 €/jour</p>
+            <ul>
+              <li>Devis & factures PDF</li>
+              <li>Modalités standard sur PDF</li>
+              <li>Mode hors ligne</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--ghost">Commencer →</a>
+          </article>
+          <article class="pricing-teaser__card pricing-teaser__card--popular">
+            <span class="pricing-teaser__badge">Le plus populaire</span>
+            <h3>Pro</h3>
+            <p class="pricing-teaser__price"><strong>79,90 €</strong><span>HT/mois</span></p>
+            <p class="pricing-teaser__daily">≈ 2,60 €/jour</p>
+            <ul>
+              <li>Rentabilité & liens paiement client</li>
+              <li>CRM commercial & pipeline</li>
+              <li>Relances auto & multi-échéances</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--primary">Choisir Pro →</a>
+          </article>
+          <article class="pricing-teaser__card">
+            <h3>Business</h3>
+            <p class="pricing-teaser__price"><strong>99,90 €</strong><span>HT/mois</span></p>
+            <p class="pricing-teaser__daily">≈ 4,90 €/jour</p>
+            <ul>
+              <li>Tout Pro inclus</li>
+              <li>Planning, dispos & rappels RDV</li>
+              <li>Gantt, métré & multi-users</li>
+            </ul>
+            <a href="inscription.html" class="btn btn--ghost">Choisir Business →</a>
+          </article>
+        </div>
+        <p class="section-cta">
+          <a href="tarifs.html" class="btn btn--ghost" data-i18n="pricing.compare">Comparer le détail des fonctionnalités →</a>
+          <span class="section-cta__note" data-i18n="pricing.note">−17 % en paiement annuel · Sans engagement</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Trust badges -->
+    <section class="trust-strip">
+      <div class="container trust-strip__grid">
+        <span data-i18n="trust.fr">🇫🇷 Développé en France</span>
+        <span data-i18n="trust.einv">✓ Compatible facturation électronique 2026</span>
+        <span data-i18n="trust.nocommit">✓ Sans engagement de durée</span>
+        <span data-i18n="trust.rgpd">✓ Données sécurisées · RGPD</span>
+        <a href="confidentialite.html" style="color:inherit;text-decoration:underline">Confidentialité</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-final">
+      <h2 data-i18n="cta.title">Entrepreneur du BTP : gardez le bénéfice dans votre société</h2>
+      <p data-i18n="cta.desc">Devis rentables, charges anticipées, plus de mauvaises factures. Essai gratuit 30 jours — découvrez ce que vous gagnez vraiment.</p>
+      <div class="cta-final__actions">
+        <a href="inscription.html" class="btn btn--white btn--lg" data-i18n="cta.signup">Essai gratuit 30 jours</a>
+        <a href="tarifs.html" class="btn btn--ghost-light" data-i18n="cta.pricing">Voir les tarifs</a>
+      </div>
+      <p class="cta-final__guarantee" data-i18n="cta.guarantee">Sans engagement · Annulable à tout moment · Configuration en 3 min</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div>
+            <a href="index.html" class="brand" style="margin-bottom:16px">
+              <div class="brand__logo" data-brand-logo aria-hidden="true"></div>
+              <div class="brand__text">
+                <span class="brand__name" style="color:white">Exxon-bat</span>
+                <span class="brand__tag" data-i18n="brand.tag.footer">Devis & rentabilité</span>
+              </div>
+            </a>
+            <p style="margin:0;font-size:0.88rem;max-width:320px" data-i18n="brand.footer.desc">Le logiciel BTP qui calcule vos charges à votre place — pour que le bénéfice reste dans votre entreprise, pas dans l'incertitude.</p>
+          </div>
+          <div>
+            <h4 data-i18n="footer.product">Produit</h4>
+            <ul>
+              <li><a href="#pourquoi-exxon-bat" data-i18n="nav.why">Pourquoi Exxon-bat</a></li>
+              <li><a href="connexion.html?next=devis.html" data-i18n="nav.demoDevis">Voir un devis</a></li>
+              <li><a href="connexion.html?next=devis.html" data-i18n="nav.quotesInvoices">Devis & factures</a></li>
+              <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+              <li><a href="#problemes">Vos défis</a></li>
+              <li><a href="#chantiers">Planning & chantiers</a></li>
+              <li><a href="#rentabilite">Rentabilité</a></li>
+              <li><a href="tarifs.html" data-i18n="footer.pricing">Tarifs & offres</a></li>
+              <li><a href="inscription.html?next=dashboard.html" data-i18n="footer.dashboard">Tableau de bord</a></li>
+              <li><a href="avis.html" data-i18n="footer.review">Laisser un avis</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="footer.account">Compte</h4>
+            <ul>
+              <li><a href="inscription.html" data-i18n="footer.signup">S'inscrire</a></li>
+              <li><a href="connexion.html" data-i18n="footer.login">Se connecter</a></li>
+              <li><a href="acces.html" data-i18n="footer.demo">Accès démonstration</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="footer.legal">Informations légales</h4>
+            <ul>
+              <li><a href="mentions-legales.html" data-i18n="footer.legalNotice">Mentions légales</a></li>
+              <li><a href="confidentialite.html" data-i18n="footer.privacyPolicy">Politique de confidentialité</a></li>
+              <li><a href="conditions-generales.html" data-i18n="footer.terms">Conditions générales</a></li>
+              <li><a href="donnees-personnelles.html" data-i18n="footer.personalData">Gestion des données personnelles</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="footer.support">Support</h4>
+            <ul>
+              <li><a href="inscription.html?next=support.html" data-i18n="nav.support">Service client</a></li>
+              <li><a href="mobile.html">Mobile & tablette</a></li>
+              <li><a href="inscription.html?next=support.html" data-i18n="footer.ticket">Créer un ticket</a></li>
+              <li><a href="mailto:support@exxon-bat.com">support@exxon-bat.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__legal" data-legal-footer></div>
+        <div class="site-footer__bottom">
+          <p data-i18n="footer.copy">© 2026 Exxon-bat — Calculs indicatifs, consultez votre comptable.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/legal-footer.js?v=194"></script>
+    <script type="module" src="js/landing-money.js?v=194"></script>
+    <script type="module" src="js/landing-features.js?v=194"></script>
+    <script type="module" src="js/testimonials-render.js?v=194"></script>
+    <script type="module" src="js/site-services.js?v=194"></script>
+    <script src="js/renta-demo.js?v=194"></script>
+    <script src="js/back-nav.js?v=194"></script>
+    <script type="module" src="js/register-sw.js?v=194"></script>
+  </body>
+</html>

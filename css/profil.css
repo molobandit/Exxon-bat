@@ -1,0 +1,406 @@
+.profil-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.profil-hero__text h1 {
+  margin: 0 0 8px;
+}
+
+.profil-hero__text p {
+  margin: 0;
+  max-width: 640px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.profil-hero__score {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  min-width: 240px;
+}
+
+.profil-score-ring {
+  --score: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    var(--primary, #6665dd) calc(var(--score) * 1%),
+    #eef2f7 0
+  );
+  position: relative;
+}
+
+.profil-score-ring::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.profil-score-ring span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.profil-score-ring[data-score="0"] {
+  --score: 0;
+}
+
+.profil-score-ring[data-tone="success"] {
+  background: conic-gradient(#059669 calc(var(--score) * 1%), #ecfdf5 0);
+}
+
+.profil-score-ring[data-tone="good"] {
+  background: conic-gradient(#6665dd calc(var(--score) * 1%), #eef2ff 0);
+}
+
+.profil-score-ring[data-tone="warning"] {
+  background: conic-gradient(#d97706 calc(var(--score) * 1%), #fffbeb 0);
+}
+
+.profil-score-ring[data-tone="danger"] {
+  background: conic-gradient(#b91c1c calc(var(--score) * 1%), #fef2f2 0);
+}
+
+.profil-score-meta strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.profil-score-meta span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.profil-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.profil-tabs__btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.profil-tabs__btn.is-active {
+  background: var(--primary-soft);
+  border-color: var(--primary-border);
+  color: var(--primary-dark);
+}
+
+.profil-panel[hidden] {
+  display: none !important;
+}
+
+.profil-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.profil-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.profil-form-grid {
+  margin-top: 16px;
+}
+
+.payment-schedule-editor {
+  margin-top: 16px;
+}
+
+.payment-schedule-editor__head,
+.payment-schedule-row {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr 0.8fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.payment-schedule-editor__head {
+  margin-bottom: 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.payment-schedule-row + .payment-schedule-row {
+  margin-top: 8px;
+}
+
+.payment-schedule-row input {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+.payment-schedule-row__remove {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: #64748b;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.payment-schedule-editor__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.payment-schedule-editor__total.is-invalid {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.payment-schedule-editor__hint {
+  margin: 10px 0 0;
+  color: #dc2626;
+  font-size: 0.84rem;
+}
+
+.payment-schedule-editor__preview {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .payment-schedule-editor__head {
+    display: none;
+  }
+
+  .payment-schedule-row {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: #fafafa;
+  }
+
+  .payment-schedule-row input[data-field="label"] {
+    grid-column: 1 / -1;
+  }
+
+  .payment-schedule-row__remove {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+.profil-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profil-kpi {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fafbff;
+}
+
+.profil-kpi span {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.profil-kpi strong {
+  font-size: 1rem;
+  color: var(--navy);
+}
+
+.profil-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profil-checklist__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.profil-checklist__item.is-done .profil-checklist__btn {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.profil-checklist__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #eef2f7;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.profil-checklist__item.is-done .profil-checklist__icon {
+  background: #059669;
+  color: #fff;
+}
+
+.profil-checklist__btn strong {
+  display: block;
+  color: var(--navy);
+  font-size: 0.9rem;
+}
+
+.profil-checklist__btn small {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.profil-plan-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin: 0 0 8px;
+}
+
+.profil-doc-preview {
+  padding: 18px 20px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  background: #fafafa;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.profil-doc-preview__brand {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.profil-doc-preview__line {
+  color: var(--text-muted);
+}
+
+.profil-kpi-preview {
+  margin-top: 24px;
+}
+
+.profil-save-bar {
+  position: sticky;
+  bottom: 16px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.profil-save-msg {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.profil-save-msg.is-saved {
+  color: var(--success, #059669);
+  font-weight: 600;
+}
+
+.profil-save-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .profil-overview-grid,
+  .profil-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .profil-hero__score {
+    width: 100%;
+  }
+
+  .profil-save-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profil-save-actions {
+    flex-direction: column;
+  }
+}
