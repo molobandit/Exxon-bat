@@ -5,15 +5,11 @@
   "description": "Exxon-bat — application BTP (devis, rentabilité, chantiers)",
   "scripts": {
     "start": "npx --yes serve -l tcp://0.0.0.0:8765 --no-port-switching",
-    "icons": "node scripts/generate-pwa-icons.mjs",
     "icons:fallback": "node scripts/generate-pwa-icons-fallback.mjs",
     "predeploy": "node scripts/sync-app-version.mjs && node scripts/predeploy-check.mjs",
     "docker:build": "docker build -t exxon-bat .",
     "docker:up": "docker compose up --build -d",
     "docker:down": "docker compose down"
-  },
-  "devDependencies": {
-    "sharp": "^0.33.5"
   },
   "engines": {
     "node": ">=18"
