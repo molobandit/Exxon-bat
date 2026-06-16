@@ -54,7 +54,7 @@ body {
 
 @media (max-width: 768px) {
   .nav__inner {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .devis-workspace {

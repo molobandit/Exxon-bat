@@ -20,6 +20,11 @@
     if (/Android|webOS|iPhone|iPod|Mobile|IEMobile|Opera Mini/i.test(ua)) return true;
     if (/iPad/i.test(ua)) return true;
     try {
+      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) return false;
+    } catch (e) {
+      /* ignore */
+    }
+    try {
       if (window.matchMedia("(max-width: 900px)").matches) return true;
     } catch (e) {
       /* ignore */
@@ -50,15 +55,7 @@
       return;
     }
 
-    var meta = document.querySelector('meta[name="viewport"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "width=device-width, initial-scale=0.7, minimum-scale=0.55, maximum-scale=3, viewport-fit=cover",
-      );
-      meta.dataset.compact = "1";
-    }
-
+    restoreDesktopViewport();
     document.documentElement.classList.add("is-app-compact");
   }
 

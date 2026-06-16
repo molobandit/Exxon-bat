@@ -1,4 +1,4 @@
-const CACHE = "exone-v194";
+const CACHE = "exone-v196";
 const APP_VERSION = CACHE.replace(/^exone-v/, "");
 
 const ASSETS = [

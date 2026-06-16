@@ -10,7 +10,16 @@
     return /Android|webOS|iPhone|iPod|Mobile|IEMobile|Opera Mini/i.test(ua) || /iPad/i.test(ua);
   }
 
+  function isDesktopPointer() {
+    try {
+      return g.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    } catch (e) {
+      return false;
+    }
+  }
+
   function isMobileNav() {
+    if (isDesktopPointer()) return false;
     try {
       if (g.matchMedia("(max-width: 900px)").matches) return true;
     } catch (e) {
@@ -30,8 +39,11 @@
       "@media (max-width:900px){" +
       ".nav__toggle{display:flex!important;order:10;position:relative;z-index:300;touch-action:manipulation;-webkit-tap-highlight-color:transparent;cursor:pointer;margin-left:auto;flex-shrink:0}" +
       ".nav__links{display:none!important;visibility:hidden!important;height:0!important;overflow:hidden!important;pointer-events:none!important}" +
-      ".nav__inner{flex-wrap:nowrap;align-items:center}" +
-      ".brand{min-width:0;flex:1}" +
+      ".nav__inner{flex-wrap:nowrap!important;align-items:center;gap:8px}" +
+      ".brand{min-width:0;flex:1 1 auto;order:1;max-width:calc(100% - 52px)}" +
+      ".brand__name{display:block!important;font-size:1rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
+      ".brand__tag{font-size:.65rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
+      ".nav__toggle{order:2;flex-shrink:0;margin-left:auto}" +
       "}" +
       "@media (min-width:901px){" +
       ".nav__toggle{display:none!important}" +
@@ -46,7 +58,10 @@
       ".app-menu__sheet{position:relative;width:100%;max-height:min(88vh,720px);background:#fff;border-radius:20px 20px 0 0;box-shadow:0 -24px 64px rgba(15,23,42,.22);display:flex;flex-direction:column;transform:translateY(100%);transition:transform .34s cubic-bezier(.22,1,.36,1);outline:none;overflow:hidden}" +
       ".app-menu.is-open .app-menu__sheet{transform:translateY(0)}" +
       ".app-menu__handle{flex-shrink:0;width:40px;height:4px;margin:10px auto 0;border-radius:999px;background:#cbd5e1}" +
-      ".app-menu__head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px 10px;border-bottom:1px solid #e2e8f0}" +
+      ".app-menu__head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px 10px;border-bottom:1px solid #e2e8f0;gap:12px}" +
+      ".app-menu__head-brand{min-width:0;display:flex;flex-direction:column;gap:2px}" +
+      ".app-menu__head-brand strong{font-size:1rem;color:#0f172a;line-height:1.2}" +
+      ".app-menu__head-brand span{font-size:.68rem;color:#64748b;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
       ".app-menu__head h2{margin:0;font-size:1rem;color:#0f172a}" +
       ".app-menu__close{width:34px;height:34px;border:none;border-radius:50%;background:#f1f5f9;color:#0f172a;font-size:1.35rem;line-height:1;cursor:pointer}" +
       ".app-menu__scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px 12px 12px}" +
@@ -116,11 +131,19 @@
       ? '<button type="button" class="app-menu__row" id="app-menu-logout" style="width:100%;border:0;background:transparent;color:#dc2626;cursor:pointer;font:inherit;text-align:left">Déconnexion</button>'
       : "";
 
+    var brandName =
+      g.document.querySelector(".brand__name")?.textContent?.trim() || "Exxon-bat";
+    var brandTag = g.document.querySelector(".brand__tag")?.textContent?.trim() || "";
+
     shell.innerHTML =
       '<div class="app-menu__scrim" data-close-menu tabindex="-1"></div>' +
       '<div class="app-menu__sheet" role="dialog" aria-modal="true" aria-label="Menu principal">' +
       '<div class="app-menu__handle" aria-hidden="true"></div>' +
-      '<div class="app-menu__head"><h2>Menu</h2><button type="button" class="app-menu__close" data-close-menu aria-label="Fermer">×</button></div>' +
+      '<div class="app-menu__head"><div class="app-menu__head-brand"><strong>' +
+      brandName +
+      "</strong>" +
+      (brandTag ? "<span>" + brandTag + "</span>" : "") +
+      '</div><button type="button" class="app-menu__close" data-close-menu aria-label="Fermer">×</button></div>' +
       '<div class="app-menu__scroll">' +
       rows +
       logoutBtn +

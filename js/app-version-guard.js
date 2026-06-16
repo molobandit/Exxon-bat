@@ -3,7 +3,7 @@
  * La version est lue depuis ?v= sur ce script (fallback synchronisé par sync-app-version.mjs).
  */
 (function () {
-  var FALLBACK_VERSION = "194";
+  var FALLBACK_VERSION = "196";
   var VERSION_KEY = "exone-app-version";
   var RELOAD_KEY = "exone-repair-reload-v";
 

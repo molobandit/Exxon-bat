@@ -1,11 +1,20 @@
 /**
- * Détection mobile fiable — PC avec écran tactile ≠ mobile si fenêtre large.
+ * Détection mobile fiable — fenêtre étroite sur PC ≠ mobile (souris).
  */
 (function (g) {
+  function isDesktopPointer() {
+    try {
+      return g.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    } catch (e) {
+      return false;
+    }
+  }
+
   function isMobileEnv() {
     var ua = g.navigator.userAgent || "";
     if (/Android|webOS|iPhone|iPod|Mobile|IEMobile|Opera Mini/i.test(ua)) return true;
     if (/iPad/i.test(ua)) return true;
+    if (isDesktopPointer()) return false;
     try {
       if (g.matchMedia("(max-width: 900px)").matches) return true;
     } catch (e) {
@@ -14,6 +23,7 @@
     return false;
   }
 
+  g.exoneIsDesktopPointer = isDesktopPointer;
   g.exoneIsMobileEnv = isMobileEnv;
 
   var script = g.document.currentScript;

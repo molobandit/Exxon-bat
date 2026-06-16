@@ -1,6 +1,6 @@
 /** Réparation légère — aucun import du catalogue (compatible iPhone). */
 (function () {
-  const APP_VERSION = "194";
+  const APP_VERSION = "196";
   const PRESTATIONS_KEY = "exone-prestations-library";
   const PRESTATIONS_PERSISTED_KEY = "exone-prestations-saved";
 
