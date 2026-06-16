@@ -100,14 +100,13 @@ function initDevisSectionNav() {
   function scrollToSection(sectionId, { smooth = true } = {}) {
     const target = document.getElementById(sectionId);
     if (!target) return;
-    const subnav = document.getElementById("devis-subnav");
-    const subnavHeight = subnav?.offsetHeight ?? 0;
-    const navOffset = parseInt(
-      getComputedStyle(document.documentElement).getPropertyValue("--devis-nav-offset") || "57",
-      10,
-    );
-    const top =
-      target.getBoundingClientRect().top + window.scrollY - navOffset - subnavHeight - 8;
+    let offset = 12;
+    const trial = document.getElementById("trial-banner");
+    if (trial && trial.offsetParent !== null) {
+      const trialRect = trial.getBoundingClientRect();
+      if (trialRect.bottom > 0) offset += trialRect.height;
+    }
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top: Math.max(0, top), behavior: smooth ? "smooth" : "auto" });
   }
 

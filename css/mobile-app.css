@@ -1160,7 +1160,8 @@ body.mobile-more-open {
   }
 
   html.is-app-compact body.devis-page .devis-subnav {
-    top: var(--devis-nav-offset, 52px);
+    position: relative;
+    top: auto;
     padding: 6px max(12px, env(safe-area-inset-left)) 6px max(12px, env(safe-area-inset-right));
   }
 

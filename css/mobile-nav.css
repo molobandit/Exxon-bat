@@ -330,16 +330,9 @@ body.app-menu-open {
 
 /* Téléphone / tablette — en-tête pro : Exxon-bat toujours visible */
 @media (max-width: 900px) and (not ((hover: hover) and (pointer: fine))) {
-  body:has(> nav.nav) {
-    padding-top: var(--app-nav-height, 52px);
-  }
-
   .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 250;
+    position: relative;
+    z-index: 50;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -432,28 +425,8 @@ body.app-menu-open {
   }
 }
 
-/* PC — barre complète toujours visible, pas de menu ☰ */
+/* PC — barre complète, liens visibles, pas de menu ☰ (défile avec la page) */
 @media (min-width: 901px) {
-  body:has(> nav.nav) {
-    padding-top: var(--app-nav-height, 57px);
-  }
-
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-  }
-
-  body.devis-page:has(> nav.nav) {
-    padding-top: 0;
-  }
-
-  body.devis-page:has(> nav.nav) .app-page {
-    padding-top: var(--devis-subnav-height, 58px);
-  }
-
   .nav__toggle {
     display: none !important;
   }
