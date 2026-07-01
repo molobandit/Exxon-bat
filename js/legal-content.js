@@ -51,7 +51,11 @@ export function renderMentionsLegales() {
 
     <article class="legal-block" id="publication">
       <h2>2. Directeur de la publication</h2>
-      <p>Le directeur de la publication est le représentant légal de <strong>${escapeHtml(pub.companyName)}</strong>, joignable à l'adresse e-mail indiquée ci-dessus.</p>
+      <p>Le directeur de la publication est ${
+        pub.legalRepresentative?.trim()
+          ? `<strong>${escapeHtml(pub.legalRepresentative.trim())}</strong>, ${escapeHtml(pub.legalRepresentativeRole?.trim() || "représentant légal")} de <strong>${escapeHtml(pub.companyName)}</strong>`
+          : `le représentant légal de <strong>${escapeHtml(pub.companyName)}</strong>`
+      }, joignable à l'adresse e-mail indiquée ci-dessus.</p>
     </article>
 
     <article class="legal-block" id="hebergement">

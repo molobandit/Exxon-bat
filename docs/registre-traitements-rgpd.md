@@ -9,13 +9,13 @@ Document interne au sens de l'article 30 du RGPD.
 
 | Champ | Valeur |
 |-------|--------|
-| **Dénomination** | EXXON-BAT SASU *(à compléter après immatriculation)* |
+| **Dénomination** | EXXON-BAT SASU |
 | **Forme juridique** | SASU |
-| **Adresse** | *(adresse du siège social)* |
-| **SIRET** | *(14 chiffres)* |
-| **RCS** | *(ville du greffe)* |
-| **TVA intracommunautaire** | FR… *(après attribution)* |
-| **Représentant légal** | *(Président — votre nom)* |
+| **Siège social** | 30 rue de Combes, 01710 Thoiry, France |
+| **SIRET** | *(à compléter après immatriculation sur formalites.entreprises.gouv.fr)* |
+| **RCS** | *(à compléter — greffe de Bourg-en-Bresse, Ain)* |
+| **TVA intracommunautaire** | *(à compléter après attribution)* |
+| **Représentant légal** | Exon Chabani, Président |
 | **Contact général** | contact@exxon-bat.com |
 | **Contact données personnelles** | privacy@exxon-bat.com |
 | **Site / application** | https://www.exxon-bat.com |
@@ -161,7 +161,7 @@ Réclamation possible auprès de la **CNIL** : [www.cnil.fr](https://www.cnil.fr
 
 | Date | Version | Modification | Auteur |
 |------|---------|--------------|--------|
-| juin 2026 | 1.0 | Création initiale | *(votre nom)* |
+| juin 2026 | 1.0 | Création initiale | Exon Chabani |
 | | | | |
 
 ---

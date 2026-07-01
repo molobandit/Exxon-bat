@@ -8,16 +8,16 @@ export const DEFAULT_SITE_PUBLISHER = {
   // —— Société (SASU Exxon-bat) ——
   companyName: "Exxon-bat",
   companyLegalForm: "SASU",
-  companyAddress: "[À RENSEIGNER] — adresse du siège social",
-  companyPostalCode: "[À RENSEIGNER]",
-  companyCity: "[À RENSEIGNER]",
+  companyAddress: "30 rue de Combes",
+  companyPostalCode: "01710",
+  companyCity: "Thoiry",
   companyCountry: "France",
-  companySiret: "[À RENSEIGNER — 14 chiffres]",
-  companyRcs: "[À RENSEIGNER — ex. RCS Lyon]",
-  companyTvaIntra: "[À RENSEIGNER — ex. FR12345678901]",
+  companySiret: "[À RENSEIGNER — après immatriculation Guichet unique]",
+  companyRcs: "[À RENSEIGNER — ex. RCS Bourg-en-Bresse]",
+  companyTvaIntra: "[À RENSEIGNER — après attribution]",
   companyApe: "5829C",
   companyCapital: "100 euros",
-  companyPhone: "[À RENSEIGNER — tél. pro]",
+  companyPhone: "",
   companyEmail: "contact@exxon-bat.com",
   companyWebsite: "https://www.exxon-bat.com",
 
@@ -25,6 +25,8 @@ export const DEFAULT_SITE_PUBLISHER = {
   privacyEmail: "privacy@exxon-bat.com",
   supportEmail: "support@exxon-bat.com",
   dpoName: "", // Non obligatoire pour une TPE SaaS — laisser vide
+  legalRepresentative: "Exon Chabani",
+  legalRepresentativeRole: "Président",
 
   // —— Prestataires (sous-traitants RGPD) ——
   hostingProvider: "Cloudflare, Inc.",
