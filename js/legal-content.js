@@ -143,7 +143,9 @@ export function renderPolitiqueConfidentialite() {
       ${ul([
         "<strong>Vous</strong> — en permanence, depuis votre compte.",
         `<strong>${escapeHtml(pub.companyName)}</strong> — aucun accès à vos données métier sans action volontaire de votre part.`,
-        "<strong>Tiers</strong> — pas de revente à des annonceurs ; prestataires limités au strict nécessaire (hébergement site, paiement, support).",
+        "<strong>Tiers</strong> — pas de revente à des annonceurs ; prestataires limités au strict nécessaire (hébergement, paiement, support).",
+        pub.hostingProvider ? `Hébergement : ${escapeHtml(pub.hostingProvider)}.` : "",
+        pub.paymentProvider ? `Paiement : ${escapeHtml(pub.paymentProvider)}.` : "",
       ])}
     </article>
 
@@ -303,9 +305,13 @@ export function renderDonneesPersonnelles() {
       <h2>4. Destinataires et sous-traitants</h2>
       <p>Vos données peuvent être communiquées aux prestataires suivants, dans la limite de leurs missions :</p>
       ${ul([
-        "Hébergeur du site web",
-        "Prestataire de paiement en ligne",
-        "Outil de support client (si vous nous contactez)",
+        pub.hostingProvider
+          ? `<strong>Hébergement :</strong> ${escapeHtml(pub.hostingProvider)}${pub.hostingAddress ? ` — ${escapeHtml(pub.hostingAddress)}` : ""}`
+          : "Hébergeur du site web",
+        pub.paymentProvider
+          ? `<strong>Paiement :</strong> ${escapeHtml(pub.paymentProvider)}${pub.paymentProviderAddress ? ` — ${escapeHtml(pub.paymentProviderAddress)}` : ""}`
+          : "Prestataire de paiement en ligne",
+        "Messagerie et support client (si vous nous contactez)",
       ])}
       <p>Aucune revente de données à des tiers à des fins commerciales.</p>
     </article>
